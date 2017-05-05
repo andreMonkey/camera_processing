@@ -263,7 +263,7 @@ fxData = [
   'washedout', 'emboss', 'cartoon', 'solarize' ]
 
 pathData = [
-  '/home/pi/Desktop/adafruit-pi-cam_3', # Path for storeMode = 0 (pixelsorting)
+  '/pictures', # Path for storeMode = 0 (pixelsorting)
   '/boot/DCIM/CANON999', # Path for storeMode = 1 (Boot partition)
   '/home/pi/Photos'      # Path for storeMode = 2 (Dropbox)
     ]     
@@ -529,7 +529,7 @@ def takePicture():
       time.sleep(2.5)
       loadIdx = saveIdx
       quit()
-  #call(["bash", "processing_kim"])
+  call(["bash", "processing_kim"])
   
   #print("why do you keep taking pics???")
 
