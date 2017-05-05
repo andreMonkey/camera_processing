@@ -210,7 +210,8 @@ def sizeModeCallback(n): # Radio buttons on size settings screen
 # camera.crop       = sizeData[sizeMode][2]
 
 def read_pin():
-    value = explorerhat.analog.one.read()
+   # value = explorerhat.analog.one.read()
+    value = 20
     print("value", value)
     mappedValue = (value / 5) * 100 # map value from poti (float between 0 and 5, to a percentage value)
     print("mappedValue", mappedValue)
