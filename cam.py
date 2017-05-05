@@ -216,12 +216,6 @@ def read_pin():
     print("mappedValue", mappedValue)
     return (mappedValue)
 
-def read_digital_pin():
-    value = explorerhat.input.two.read()
-    print(" digital value", value)
-    return value
-
-
 
 # Global stuff -------------------------------------------------------------
 screenMode      =  3      # Current screen mode; default = viewfinder
