@@ -263,7 +263,7 @@ fxData = [
   'washedout', 'emboss', 'cartoon', 'solarize' ]
 
 pathData = [
-  '/agile-node-red-nodes/camera/pictures/image.jpg', # Path for storeMode = 0 (pixelsorting)
+  '/agile-node-red-nodes/camera_processing/pictures/image.jpg', # Path for storeMode = 0 (pixelsorting)
   '/boot/DCIM/CANON999', # Path for storeMode = 1 (Boot partition)
   '/home/pi/Photos'      # Path for storeMode = 2 (Dropbox)
     ]     
