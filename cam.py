@@ -630,8 +630,8 @@ while(True):
   time.sleep(0.001) # do not use all the cpu power
   # make a loop to test for the button being pressed
   #if button == pressed:
-  pressed = 0
-  pressed = read_digital_pin()
+  pressed = 1
+ # pressed = read_digital_pin()
   if pressed:
     when_pressed = time.time()
     time_pressed = time.time() - when_pressed
