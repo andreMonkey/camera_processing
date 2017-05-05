@@ -37,7 +37,6 @@ import time
 import yuv2rgb
 from pygame.locals import *
 from subprocess import call  
-import explorerhat
 
 # UI classes ---------------------------------------------------------------
 
