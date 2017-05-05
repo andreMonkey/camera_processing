@@ -1,0 +1,37 @@
+we made a digital button connected to digital input 2 on the phat
+now we want to take a picture in cam.py when button pressed 
+or turn off the PI when button pressed for long. 
+see lines 625ff in cam.py for most recent attempt. 
+
+things to do next time: 
+- what did pimoroni reply on the hackr email
+- make hackr work
+- make display work
+- make button work/done
+
+
+
+
+
+22/07/2016
+
+Things written there stilll have to be done, there are a few new things to be done
+
+python:
+-we need an exit button that turns off everything
+-a turn on button(we want to turn on and off the camera )
+-save the analog data in a clean way so that we can read them/ now it saves two files: one where it stores all the data and one to be used by processing that get written new for each picture.
+
+
+processing:
+-how to read a new file each time
+-be sure that the file has been saved before exit
+-choose a mod
+-understand the range to be used with the chosen mod and understand how to map the analog data
+-how to get the data in / understoooood!/ now I need to map it and get new values
+-modify the script in a way we like (it's going to be great to be at this point)
+
+
+hardware:
+-we need to understand if our screen would work, if not possible to make it work we need to find one that works through HDMI
+-map sensors
