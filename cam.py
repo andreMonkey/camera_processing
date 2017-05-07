@@ -529,7 +529,7 @@ def takePicture():
       time.sleep(2.5)
       loadIdx = saveIdx
       quit()
-  call(["bash", "processing_kim"])
+  call(["bash", "sudo xvfb-run sh processing_kim"])
   
   #print("why do you keep taking pics???")
 
