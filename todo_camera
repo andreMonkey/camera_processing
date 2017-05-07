@@ -1,0 +1,14 @@
+- flash the bluetooth firmware!
+- reinstall agile software
+
+camera
+- import camera_processing from github to ~/agile-nodered..../camera_processing
+
+- install python libraries from apt-get (python-picamera, some more??)
+- install java 1.8 ! 
+- install xvfb run from apt-get
+
+monitor
+
+- follow installation guide of watterott
+
