@@ -263,7 +263,7 @@ fxData = [
   'washedout', 'emboss', 'cartoon', 'solarize' ]
 
 pathData = [
-  '/agile-node-red-nodes/camera_processing/pictures/image.jpg', # Path for storeMode = 0 (pixelsorting)
+  '/pictures/', # Path for storeMode = 0 (pixelsorting)
   '/boot/DCIM/CANON999', # Path for storeMode = 1 (Boot partition)
   '/home/pi/Photos'      # Path for storeMode = 2 (Dropbox)
     ]     
@@ -482,10 +482,12 @@ def takePicture():
   camera.resolution = sizeData[sizeMode][0]
   #camera.crop       = sizeData[sizeMode][2]
   try:
-    camera.annotate_text = ''
-    camera.capture(filename, use_video_port=False, format='jpeg',
-      thumbnail=None)
+	#camera.annotate_text = ''
+    #camera.capture(filename, use_video_port=False, format='jpeg',
+    #      thumbnail=None)
+    camera.capture("test.jpg")
     print("took a picture")
+    return
     with open("saving_data", "a") as text_file:
       text_file.write("\n")
       text_file.write( "Filename: {0}".format(filename))
@@ -529,7 +531,9 @@ def takePicture():
       time.sleep(2.5)
       loadIdx = saveIdx
       quit()
-  call(["bash", "sudo xvfb-run sh processing_kim"])
+#  call(["bash", "sudo xvfb-run sh processing_kim"])
+  call(["bash", "sh processing_kim"])
+
   
   #print("why do you keep taking pics???")
 
@@ -654,18 +658,18 @@ while(True):
       call("sudo shutdown -h now") # turn of PI , when pressed for more than 4 seconds      
 
    
-    # Process touchscreen input
-    while True:
-      for event in pygame.event.get():
-        if(event.type is MOUSEBUTTONDOWN):
-          pos = pygame.mouse.get_pos()
-          for b in buttons[screenMode]:
-            if b.selected(pos): break
-   #  If in viewfinder or settings modes, stop processing touchscreen
-#     and refresh the display to show the live preview.  In other modes
- #    (image playback, etc.), stop and refresh the screen only when
-  #   screenMode changes.
-        if screenMode >= 3 or screenMode != screenModePrior: break
+    ## Process touchscreen input
+    #while True:
+      #for event in pygame.event.get():
+        #if(event.type is MOUSEBUTTONDOWN):
+          #pos = pygame.mouse.get_pos()
+          #for b in buttons[screenMode]:
+            #if b.selected(pos): break
+   ##  If in viewfinder or settings modes, stop processing touchscreen
+##     and refresh the display to show the live preview.  In other modes
+ ##    (image playback, etc.), stop and refresh the screen only when
+  ##   screenMode changes.
+        #if screenMode >= 3 or screenMode != screenModePrior: break
    
    
     
