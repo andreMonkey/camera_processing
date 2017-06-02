@@ -9,15 +9,14 @@ Try connecting up a rotary potentiometer or analog sensor to input one.
 """)
 
 from subprocess import call
-import explorerhat
 import time
 
 
 
 while True:
  call(["ls", "-l"])
- call(["python", "cam.py"])
- call(["bash", "processing_kim"])
+ call(["python", "camera_test.py"])
+ #call(["bash", "processing_kim"])
  
  #time.sleep(0.001) # do not use all the cpu power
  #pressed = 0

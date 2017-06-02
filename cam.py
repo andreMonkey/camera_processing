@@ -263,7 +263,7 @@ fxData = [
   'washedout', 'emboss', 'cartoon', 'solarize' ]
 
 pathData = [
-  '/pictures/', # Path for storeMode = 0 (pixelsorting)
+  './pictures/', # Path for storeMode = 0 (pixelsorting)
   '/boot/DCIM/CANON999', # Path for storeMode = 1 (Boot partition)
   '/home/pi/Photos'      # Path for storeMode = 2 (Dropbox)
     ]     
@@ -442,7 +442,7 @@ def spinner():
 
 def takePicture():
   global busy, gid, loadIdx, saveIdx, scaled, sizeMode, storeMode, storeModePrior, uid
-
+  print "entering picture taking function"
   if not os.path.isdir(pathData[storeMode]):
     try:
       os.makedirs(pathData[storeMode])
@@ -485,6 +485,7 @@ def takePicture():
 	#camera.annotate_text = ''
     #camera.capture(filename, use_video_port=False, format='jpeg',
     #      thumbnail=None)
+    print("try to capture a picture")
     camera.capture("test.jpg")
     print("took a picture")
     return
@@ -636,6 +637,7 @@ while(True):
   # make a loop to test for the button being pressed
   #if button == pressed:
   pressed = 1
+  print "set pressed"
  # pressed = read_digital_pin()
   if pressed:
     when_pressed = time.time()

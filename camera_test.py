@@ -6,41 +6,89 @@ from subprocess import call
 import json
 import time
 import requests
+import datetime
 
 pictureId = 0
-
-while 1:
-	pictureId = pictureId + 1
-	sensorValue = get_sensor_data()
-	logSensorData(sensorValue)
-	takePicture(pictureId)
-	#pixelsortPicture()
-
-
-  
+ 
 def get_sensor_data():
 	#try latest update http request	
-	result = requests.get("http://agilegw.local:2000/api/device/dummy001122334455/lastUpdate").text  # try string replace for the "["
+	result = requests.get("http://agilegw.local:2000/api/device/dummy001122334455/lastUpdate").text
+	
+	try:
+		result = json.loads(result)
+	except ValueError:
+		print("No data available got Message:", result)
+		exit()
+	else:
+		#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
+		value = result[0]['value']
+		print("Sensor value:")
+		print value
 		
-	#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
-	result = json.loads(result)
-	value = result[0]['value']
-	print("Sensor value")
-	print value
-	
-	return (value)
+		return value
 
-def takePicture(pictureId):
-	fileName = 'test_000'+ pictureId + 'png'
-	print("taking picture #", fileName)
-	camera = picamera.PiCamera()
-	camera.capture('test_0004.png')
-	
 def logSensorData(sensorValue):
-	with open("data_for_processing", "w") as text_file:
-		text_file.write( "value: {0}".sensorValue)
-		print("did logging to text-file")
+	
+	with open("data_for_processing", "w") as text_file: # use option "a" for adding instead of overwriting
+		text_file.write(sensorValue)
+		
+		#timeStamp = datetime.datetime.now()	
+		#text_file.write("time:".format(timeStamp))
+
+		print("did logging to data-text-file")
+
+def getNameOfThePic(): 
+	# Scan for next available image slot
+	
+	# TODO: this only works for the first 10 pictures. 00010.png gets overwritten every time afterwards.
+	# ('looking for filename:', 'test_0010.png')
+
+	saveIdx = 1
+	while True:
+		filename =  'test_' + '%04d' % saveIdx + '.png' # trying to save in png so that pixelsorting goes automatically
+		print ("looking for filename:" ,filename)
+		if not os.path.isfile(filename): break
+		saveIdx += 1
+		
+	return 'test_000'+ format(saveIdx) + '.png'
+
+def takePicture(nameOfThePic):
+	print("taking picture #", nameOfThePic)
+	camera = picamera.PiCamera()
+	camera.start_preview()
+	time.sleep(2)
+	camera.capture(nameOfThePic)
+	# Problem: It only takes 1 picture then crashes --> try "closing" the camera or something. it seems to stay active and fails when trying to take the second picture. Out of ressources?
+
+def logNameOfThePicture(nameOfThePic):
+	with open("name_of_the_pic", "w") as text_file: # use option "a" for adding instead of overwriting
+		text_file.write(nameOfThePic)
+		
+		#timeStamp = datetime.datetime.now()	
+		#text_file.write("time:".format(timeStamp))
+
+		print("did logging of picture name")
 
 def pixelsortPicture():
 	call(["bash", "processing_kim"])
+
+	
+	
+# actual programme
+while 1:
+	sensorValue = get_sensor_data()
+	logSensorData(sensorValue)
+
+	#pictureId = pictureId + 1
+	nameOfThePic = getNameOfThePic()
+	
+	print(nameOfThePic)
+	takePicture(nameOfThePic)
+	logNameOfThePicture(nameOfThePic)
+	#pixelsortPicture()
+
+	time.sleep(5)
+	#exit() #  delete this when bug is fixed that only 1 picture can be taken.
+	
+	
 	
