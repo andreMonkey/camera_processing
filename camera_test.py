@@ -38,11 +38,8 @@ def logSensorData(sensorValue):
 		print("did logging to data-text-file")
 
 def getNameOfThePic(): 
-	# Scan for next available image slot
 	
-	# TODO: this only works for the first 10 pictures. 00010.png gets overwritten every time afterwards.
-	# ('looking for filename:', 'test_0010.png')
-
+	# Scan for next available image slot
 	saveIdx = 1
 	while True:
 		filename =  'test_' + '%04d' % saveIdx + '.png' # trying to save in png so that pixelsorting goes automatically
@@ -50,7 +47,7 @@ def getNameOfThePic():
 		if not os.path.isfile(filename): break
 		saveIdx += 1
 		
-	return 'test_000'+ format(saveIdx) + '.png'
+	return filename
 
 def takePicture(nameOfThePic):
 	print("taking picture #", nameOfThePic)
@@ -58,7 +55,6 @@ def takePicture(nameOfThePic):
 	camera.start_preview()
 	time.sleep(2)
 	camera.capture(nameOfThePic)
-	# Problem: It only takes 1 picture then crashes --> try "closing" the camera or something. it seems to stay active and fails when trying to take the second picture. Out of ressources?
 
 def logNameOfThePicture(nameOfThePic):
 	with open("name_of_the_pic", "w") as text_file: # use option "a" for adding instead of overwriting
@@ -88,7 +84,6 @@ while 1:
 	#pixelsortPicture()
 
 	time.sleep(5)
-	#exit() #  delete this when bug is fixed that only 1 picture can be taken.
 	
 	
 	
