@@ -13,10 +13,12 @@ import time
 
 
 
-while True:
- #call(["ls", "-l"])
- call(["python", "camera_test.py"])
- #call(["bash", "processing_kim"])
+#call(["ls", "-l"])
+call(["python", "camera_test.py"])
+time.sleep(2)
+call(["bash", "./processing/pixelsorting"])
+
+
  
  
  # Work the camera with a button! 

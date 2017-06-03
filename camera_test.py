@@ -11,7 +11,7 @@ import datetime
 pictureFileType = '.png'
 picturePath = '/home/pi/camera_processing/processing/pictures/'
 sensorDataFile = '/home/pi/camera_processing/processing/data_for_processing'
-nameOfTheLatestPicFile = '/home/pi/camera_processing/processing/name_of_the_latest_pic'
+nameOfTheLatestPicFile = '/home/pi/camera_processing/processing/name_of_the_pic'
 logFileAllData = '/home/pi/camera_processing/processing/pictures/project_log_file'
  
 def get_sensor_data():
@@ -21,7 +21,7 @@ def get_sensor_data():
 	try:
 		result = json.loads(result)
 	except ValueError:
-		print("No data available got Message:", result)
+		print("No data available. Did you connect the AGILE? Got Message:", result)
 		exit()
 	else:
 		#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
@@ -58,6 +58,7 @@ def getNameOfThePic():
 def takePicture(nameOfThePic):
 	print("taking picture #", nameOfThePic)
 	camera = picamera.PiCamera()
+	camera.resolution = (1920, 1080)
 	camera.start_preview()
 	time.sleep(2)
 	camera.capture(picturePath + nameOfThePic + pictureFileType)
@@ -90,19 +91,16 @@ def pixelsortPicture():
 	
 	
 # actual programme
-while 1:
-	sensorValue = get_sensor_data()
-	logSensorData(sensorValue)
+sensorValue = get_sensor_data()
+logSensorData(sensorValue)
 
-	nameOfThePic = getNameOfThePic()
-	
-	print(nameOfThePic)
-	takePicture(nameOfThePic)
-	logNameOfThePicture(nameOfThePic)
-	logAllData(nameOfThePic, sensorValue)
-	#pixelsortPicture()
+nameOfThePic = getNameOfThePic()
+print(nameOfThePic)
 
-	time.sleep(5)
+takePicture(nameOfThePic)
+logNameOfThePicture(nameOfThePic)
+logAllData(nameOfThePic, sensorValue)
+
 	
 	
 	
