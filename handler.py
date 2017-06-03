@@ -14,10 +14,12 @@ import time
 
 
 while True:
- call(["ls", "-l"])
+ #call(["ls", "-l"])
  call(["python", "camera_test.py"])
  #call(["bash", "processing_kim"])
  
+ 
+ # Work the camera with a button! 
  #time.sleep(0.001) # do not use all the cpu power
  #pressed = 0
  #pressed = read_digital_pin()

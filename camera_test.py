@@ -8,7 +8,11 @@ import time
 import requests
 import datetime
 
-picturePath = '/home/pi/camera_processing/pictures/'
+pictureFileType = '.png'
+picturePath = '/home/pi/camera_processing/processing/pictures/'
+sensorDataFile = '/home/pi/camera_processing/processing/data_for_processing'
+nameOfTheLatestPicFile = '/home/pi/camera_processing/processing/name_of_the_latest_pic'
+logFileAllData = '/home/pi/camera_processing/processing/pictures/project_log_file'
  
 def get_sensor_data():
 	#try latest update http request	
@@ -29,7 +33,7 @@ def get_sensor_data():
 
 def logSensorData(sensorValue):
 	
-	with open("data_for_processing", "w") as text_file: # use option "a" for adding instead of overwriting
+	with open(sensorDataFile, "w") as text_file: # use option "a" for adding instead of overwriting
 		text_file.write(sensorValue)
 		
 		#timeStamp = datetime.datetime.now()	
@@ -39,13 +43,14 @@ def logSensorData(sensorValue):
 
 def getNameOfThePic(): 
 	
+	# TODO use time stamp as name of the pic!
+	
 	# Scan for next available image slot
 	saveIdx = 1
 	while True:
-		nameOfThePic =  'test_' + '%04d' % saveIdx + '.png' # trying to save in png so that pixelsorting goes automatically
+		nameOfThePic =  'test_' + '%04d' % saveIdx # trying to save in png so that pixelsorting goes automatically
 		print ("looking for filename:" ,nameOfThePic)
-		print('/home/pi/camera_processing/pictures' + nameOfThePic)
-		if not os.path.isfile(picturePath + nameOfThePic): break
+		if not os.path.isfile(picturePath + nameOfThePic + pictureFileType): break
 		saveIdx += 1
 		
 	return nameOfThePic
@@ -55,12 +60,25 @@ def takePicture(nameOfThePic):
 	camera = picamera.PiCamera()
 	camera.start_preview()
 	time.sleep(2)
-	camera.capture(picturePath + nameOfThePic)
+	camera.capture(picturePath + nameOfThePic + pictureFileType)
 
 def logNameOfThePicture(nameOfThePic):
-	with open("name_of_the_pic", "w") as text_file: # use option "a" for adding instead of overwriting
+	with open(nameOfTheLatestPicFile, "w") as text_file: # use option "a" for adding instead of overwriting
 		text_file.write(nameOfThePic)
 		
+		#timeStamp = datetime.datetime.now()	
+		#text_file.write("time:".format(timeStamp))
+
+		print("did logging of picture name")
+
+def logAllData(nameOfThePic, sensorValue):
+	with open(logFileAllData, "a") as text_file: # use option "a" for adding instead of overwriting
+		text_file.write(nameOfThePic + pictureFileType)
+		text_file.write(' => ')
+		text_file.write(sensorValue)
+		text_file.write(',')
+		text_file.write('\n')
+
 		#timeStamp = datetime.datetime.now()	
 		#text_file.write("time:".format(timeStamp))
 
@@ -81,6 +99,7 @@ while 1:
 	print(nameOfThePic)
 	takePicture(nameOfThePic)
 	logNameOfThePicture(nameOfThePic)
+	logAllData(nameOfThePic, sensorValue)
 	#pixelsortPicture()
 
 	time.sleep(5)
