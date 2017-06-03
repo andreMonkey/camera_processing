@@ -8,7 +8,7 @@ import time
 import requests
 import datetime
 
-pictureId = 0
+picturePath = '/home/pi/camera_processing/pictures/'
  
 def get_sensor_data():
 	#try latest update http request	
@@ -42,19 +42,20 @@ def getNameOfThePic():
 	# Scan for next available image slot
 	saveIdx = 1
 	while True:
-		filename =  'test_' + '%04d' % saveIdx + '.png' # trying to save in png so that pixelsorting goes automatically
-		print ("looking for filename:" ,filename)
-		if not os.path.isfile(filename): break
+		nameOfThePic =  'test_' + '%04d' % saveIdx + '.png' # trying to save in png so that pixelsorting goes automatically
+		print ("looking for filename:" ,nameOfThePic)
+		print('/home/pi/camera_processing/pictures' + nameOfThePic)
+		if not os.path.isfile(picturePath + nameOfThePic): break
 		saveIdx += 1
 		
-	return filename
+	return nameOfThePic
 
 def takePicture(nameOfThePic):
 	print("taking picture #", nameOfThePic)
 	camera = picamera.PiCamera()
 	camera.start_preview()
 	time.sleep(2)
-	camera.capture(nameOfThePic)
+	camera.capture(picturePath + nameOfThePic)
 
 def logNameOfThePicture(nameOfThePic):
 	with open("name_of_the_pic", "w") as text_file: # use option "a" for adding instead of overwriting
@@ -75,7 +76,6 @@ while 1:
 	sensorValue = get_sensor_data()
 	logSensorData(sensorValue)
 
-	#pictureId = pictureId + 1
 	nameOfThePic = getNameOfThePic()
 	
 	print(nameOfThePic)
