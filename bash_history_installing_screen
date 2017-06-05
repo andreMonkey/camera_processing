@@ -1,0 +1,253 @@
+sudo raspi-config
+pwd
+pwd raspberry agileiot
+passwd
+sudo apt-get update
+sudo apt-get install git
+wget https://download.docker.com/linux/debian/dists/jessie/pool/edge/armhf/docker-ce_17.05.0~ce-0~debian-jessie_armhf.deb 
+ wget 
+https://download.docker.com/linux/debian/dists/jessie/pool/edge/armhf/docker-ce_17.05.0~ce-0~debian-jessie_armhf.deb
+wget https://download.docker.com/linux/debian/dists/jessie/pool/edge/armhf/docker-ce_17.05.0~ce-0~debian-jessie_armhf.deb
+sudo dpkg -i docker-ce_17.05.0~ce-0~debian-jessie_armhf.deb
+sudo apt-get install -f
+sudo usermod -aG docker $USER
+sudo curl -L https://github.com/javabean/arm-compose/releases/download/1.13.0/docker-compose-Linux-armv7l -o /usr/local/bin/docker-compose 
+sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L https://github.com/javabean/arm-compose/releases/download/1.13.0/docker-compose-Linux-armv7l -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo pico /etc/hostname sudo pico /etc/hosts
+sudo pico /etc/hostname
+sudo pico /etc/hosts
+sudo systemctl stop bluetooth.service
+sudo systemctl disable bluetooth.service
+git clone --recursive https://github.com/Agile-IoT/agile-scripts.git 
+git clone --recursive https://github.com/Agile-IoT/agile-scripts.git
+cd agile-scripts/agile-cli/
+cp agile.config.examples/agile.config.local agile.config
+sudo ./agile install
+agile start
+sudo reboot
+raspistill -o
+git clone https://github.com/andreMonkey/camera_processing.git
+cd camera_processing/
+python cam.py
+xkill
+sudo reboot
+cd agile-scripts/
+agile start
+java --version
+cd camera_processing/
+java processing_kim
+cd ..
+git clone https://github.com/andreMonkey/adafruit-pi-cam.git
+cd adafruit-pi-cam/
+python cam.py
+nano cam.py
+python cam.py
+cd..
+cd ..
+cd camera_processing/
+python cam.py
+ls
+cd pictures/
+ls
+cd image.jpg/
+ls
+cd ..
+python cam.py
+ls
+cd pictures/
+ls
+cd ..
+python camera_test.py 
+ls
+python camera_test.py 
+sh processing_kim
+cd camera_processing/
+python camera_test.py 
+cd ..
+cd agile-scripts/
+agile start
+cd ..
+cd camera_processing/
+ls
+python camera_test.py 
+git status
+git add -A
+git commit
+git push
+sudo halt -n
+pip install websocket-client
+sudo pip install websocket-client
+ls
+cd camera_processing/
+ls
+python camera_test.py 
+sudo reboot
+cd camera_processing/
+python camera_test.py 
+docker restart
+docker service restart
+service docker restart 
+docker ps
+docker restart $(docker ps -a -q)
+docker ps
+sudo reboot
+cd camera_processing/
+python camera_test.py 
+cd camera_processing/
+python camera_test.py 
+git stash
+python camera_test.py 
+git stash pop
+sudo reboot
+xkill
+cd camera_processing/
+python camera_test.py 
+git status
+git add -A
+git commit
+git push
+git add -A
+git commit
+python cam.py 
+sh processing_kim
+python cam.py 
+xkill
+cd camera_processing/
+python cam.py
+xkill
+cd camera_processing/
+python cam.py
+cd camera_processing/
+python camera_test.py 
+git st
+git status
+git add camera_test.py 
+git commit
+git push
+git add -A
+git commit
+git diff
+git status
+git diff cam.py
+git checkout cam.py
+sudo reboot
+cd camera_processing/
+python handler.py 
+python camera_test.py 
+git add -A
+git add camera_test.py 
+git commit
+git push
+git status
+uname -a
+cd camera_processing/
+nano .gitignore 
+git add .gitignore 
+nano .gitignore 
+cd camera_processing/
+python camera_test.py 
+python handler.py 
+git add camera_test.py 
+git commit
+python camera_test.py 
+python handler.py 
+git add -A
+git add camera_test.py 
+git add handler.py 
+git commit
+git push
+touch .gitignore
+nano .gitignore 
+git status
+git add -A
+git status
+git help gitignore
+git rm --cached
+git rm --cached -r
+git rm --cached
+git rm --cached *
+git rm --cached * -r
+git status
+git add -A
+git commit
+git push
+python handler.py
+sudo reboot
+cd camera_processing/
+python handler.py 
+xkill
+xkill
+cd camera_processing/
+python handler.py
+python camera_test.py 
+python handler.py
+git add -A
+git commit
+git push
+sh processing/pixelsorting
+git clone https://github.com/watterott/RPi-Display.git
+cd RPi-Display/
+sudo sh ./rpi-display.sh 
+sudo /bin/bash ./rpi-display.sh 270
+startx -- -layout HDMI
+sudo reboot
+startx -- -layout TFT
+cd RPi-Display/
+sudo /bin/bash rpi-display.sh 
+sudo /bin/bash rpi-display.sh 270
+ls
+startx --layout -HDMITFT
+sudo startx --layout -HDMITFT
+startx --layout -TFT
+sudo startx --layout -TFT
+sudo reboot
+sudo startx --layout -TFT
+cd RPi-Display/
+/bin/bash rpi-display.sh 
+sudo /bin/bash rpi-display.sh 
+sudo /bin/bash rpi-display.sh 270
+sudo vi /usr/share/X11/xorg.conf.d/99-fbdev.conf
+cd /usr/share/X11/xorg.conf.d/
+ls
+touch 99-fbdev.conf
+sudo touch 99-fbdev.conf
+sudo nano 99-fbdev.conf 
+startx
+~
+cd ..
+cd dev/
+ls
+sudo startx --layout -TFT
+cd ..
+cd boot/overlays/
+ls
+ls rpi*
+nano rpi-display.dtbo 
+vim rpi-display.dtbo 
+vi rpi-display.dtbo 
+cp rpi-display.dtbo rpi-display.dtb
+sudo cp rpi-display.dtbo rpi-display.dtb
+sudo vi /boot/config.txt 
+sudo reboot
+sudo nano /boot/config.txt 
+sudo reboot
+sudo update-rc.d fbcp remove
+sudo reboot
+startx --layout -TFT
+nano /home/pi/.local/share/xorg/Xorg.1.log
+cd RPi-Display/
+/bin/bash rpi-display.sh 270
+sudo /bin/bash rpi-display.sh 270
+startx --layout -TFT
+sudo startx --layout -TFT
+nano /var/log/Xorg.1.log
+sudo startx --layout -TFT
+sudo adduser pi tty
+sudo startx --layout -TFT
+ls /usr/share/X11/xorg.conf.d/
+nano /usr/share/X11/xorg.conf.d/99-fbdev.conf 
+sudo mv /usr/share/X11/xorg.conf.d/99-fbdev.conf ~
+ls /usr/share/X11/xorg.conf.d/
+sudo reboot
