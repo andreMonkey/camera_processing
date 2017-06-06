@@ -14,6 +14,7 @@ import time
 
 
 #call(["ls", "-l"])
+# TODO Python module anschauen, so dass man nicht aus der bash neue scripts ausführen muss
 call(["python", "camera_test.py"])
 time.sleep(2)
 call(["bash", "./processing/pixelsorting"])
