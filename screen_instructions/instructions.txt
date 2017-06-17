@@ -1,0 +1,10 @@
+follow the instructions on
+
+https://github.com/watterott/RPi-Display/blob/master/docu/FBTFT-Install.md
+and 
+https://github.com/watterott/RPi-Display/blob/master/docu/FAQ.md
+
+if afterwards you cannot login and only see login screen on small tft
+https://raspberrypi.stackexchange.com/questions/45914/raspbian-graphical-login-screen-stuck-cant-login ----> Use sudo chown -R pi.pi /home/pi. This will set the permissions correctly on any temporary files necessary for the GUI, etc.
+
+some more info in the picture.
