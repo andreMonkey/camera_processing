@@ -11,18 +11,12 @@ Try connecting up a rotary potentiometer or analog sensor to input one.
 from subprocess import call
 import time
 
-# discover bluetooth devices - sh ./discover.sh
-call(["sh", "./discover.sh"])
-
-# register oximeter sh ./registerDevice.sh 98:7B:F3:73:80:84 Oximeter
-call(["sh", "sh ./registerDevice.sh 98:7B:F3:73:80:84 Oximeter"])
-
-# execute command for websocket subscription - sh ./subscribe.sh  ble987BF3738084 PULSE
-call(["sh", "./subscribe.sh ble987BF3738084 PULSE"])
+# set up oximeter
+call(["sh", "setup_oximeter.sh"])
 
 
-#call(["ls", "-l"])
-# TODO Python module anschauen, so dass man nicht aus der bash neue scripts ausführen muss
+# call(["ls", "-l"])
+# TODO Python module anschauen, so dass man nicht aus der bash neue scripts ausfuehren muss
 call(["python", "camera_test.py"])
 time.sleep(2)
 call(["bash", "./processing/pixelsorting"])

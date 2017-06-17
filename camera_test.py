@@ -3,6 +3,7 @@ import pygame
 import os
 import os.path
 from subprocess import call  
+from websocket import create_connection
 import json
 import time
 import requests
@@ -13,23 +14,46 @@ picturePath = '/home/pi/camera_processing/processing/pictures/'
 sensorDataFile = '/home/pi/camera_processing/processing/data_for_processing'
 nameOfTheLatestPicFile = '/home/pi/camera_processing/processing/name_of_the_pic'
 logFileAllData = '/home/pi/camera_processing/processing/pictures/project_log_file'
- 
-def get_sensor_data():
-	#try latest update http request	
-	result = requests.get("http://agilegw.local:2000/api/device/dummy001122334455/lastUpdate").text
-	
-	try:
+
+def get_pulse_data_from_websocket():
+  ws = create_connection("ws://agilegw.local:8080/ws/device/ble987BF3738084/PULSE/subscribe")
+  print "Receiving..."
+  result =  ws.recv()
+  print "Received '%s'" % result
+  ws.close()
+  
+  try:
 		result = json.loads(result)
-	except ValueError:
-		print("No data available. Did you connect the AGILE? Got Message:", result)
+  except ValueError:
+		print("No data available. Did you connect the AGILE? Is the sensor turned on? Got Message:", result)
+		print("TODO: consider running a reconnect script or something here")
 		exit()
-	else:
+  else:
 		#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
-		value = result[0]['value']
+		#value = result[0]['value']
+		value = result.get('value')
+			
 		print("Sensor value:")
 		print value
 		
 		return value
+ 
+#def get_sensor_data():
+	##try latest update http request	
+	#result = requests.get("http://agilegw.local:2000/api/device/dummy001122334455/lastUpdate").text
+	
+	#try:
+		#result = json.loads(result)
+	#except ValueError:
+		#print("No data available. Did you connect the AGILE? Got Message:", result)
+		#exit()
+	#else:
+		##Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
+		#value = result[0]['value']
+		#print("Sensor value:")
+		#print value
+		
+		#return value
 
 def logSensorData(sensorValue):
 	
@@ -91,7 +115,7 @@ def pixelsortPicture():
 	
 	
 # actual programme
-sensorValue = get_sensor_data()
+sensorValue = get_pulse_data_from_websocket()
 logSensorData(sensorValue)
 
 nameOfThePic = getNameOfThePic()
