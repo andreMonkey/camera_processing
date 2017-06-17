@@ -30,7 +30,6 @@ def get_pulse_data_from_websocket():
 		exit()
   else:
 		#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
-		#value = result[0]['value']
 		value = result.get('value')
 			
 		print("Sensor value:")
@@ -38,31 +37,11 @@ def get_pulse_data_from_websocket():
 		
 		return value
  
-#def get_sensor_data():
-	##try latest update http request	
-	#result = requests.get("http://agilegw.local:2000/api/device/dummy001122334455/lastUpdate").text
-	
-	#try:
-		#result = json.loads(result)
-	#except ValueError:
-		#print("No data available. Did you connect the AGILE? Got Message:", result)
-		#exit()
-	#else:
-		##Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
-		#value = result[0]['value']
-		#print("Sensor value:")
-		#print value
-		
-		#return value
-
 def logSensorData(sensorValue):
 	
 	with open(sensorDataFile, "w") as text_file: # use option "a" for adding instead of overwriting
 		text_file.write(sensorValue)
 		
-		#timeStamp = datetime.datetime.now()	
-		#text_file.write("time:".format(timeStamp))
-
 		print("did logging to data-text-file")
 
 def getNameOfThePic(): 
