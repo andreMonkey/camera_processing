@@ -8,3 +8,6 @@ if afterwards you cannot login and only see login screen on small tft
 https://raspberrypi.stackexchange.com/questions/45914/raspbian-graphical-login-screen-stuck-cant-login ----> Use sudo chown -R pi.pi /home/pi. This will set the permissions correctly on any temporary files necessary for the GUI, etc.
 
 some more info in the picture.
+
+---
+somehow in the working state now, i cannot find the folder /etc/X11/Xorg.conf.d anymore. 
