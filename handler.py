@@ -11,6 +11,7 @@ Try connecting up a rotary potentiometer or analog sensor to input one.
 from subprocess import call
 import time
 
+sh ./subscribe.sh  ble987BF3738084 PULSE
 
 
 #call(["ls", "-l"])

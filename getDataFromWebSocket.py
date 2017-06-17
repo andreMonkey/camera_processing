@@ -7,7 +7,7 @@ from websocket import create_connection
 import json
 import time
 import requests
-ws = create_connection("ws://agilegw.local:8080/ws/device/dummy001122334455.DummyData/subscribe")
+ws = create_connection("ws://agilegw.local:8080/ws/device/ble987BF3738084/PULSE/subscribe")
 
 while 1:
 	# get data from websocket
