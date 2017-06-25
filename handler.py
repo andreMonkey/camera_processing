@@ -1,37 +1,41 @@
 #!/usr/bin/env python
-print("""
-This example shows how you can monitor an analog input by attaching a function to its changed event.
-
-You should see the analog value being printed out as it changes.
-
-Try connecting up a rotary potentiometer or analog sensor to input one.
-
-""")
 
 from subprocess import call
 import time
+import RPi.GPIO as GPIO
+import time
+import filming
+
+GPIO.setmode(GPIO.BCM)
+
+GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 # set up oximeter
-call(["sh", "setup_oximeter.sh"])
+#call(["sh", "setup_oximeter.sh"])
+
+# TODO: ADD multi thread processing!!!
+while True:
+    time.sleep(0.001) # do not use all the cpu power
+    # The button has not been pressed - we are in filming mode
+    if (GPIO.input(18) == True):
+        filming.film()
+        continue
+    # Button has been pressed - we take a picture
+    elif (GPIO.input(18) == False):
+        # run script to take picture and save data
+        # display foto and pixelsort (parallel??) 
+        # run script to pixelsort
+        # run script to display pixelsorted picture
+        # run script to print picture
+        call(["python", "camera_test.py"])
+#         call(["python", "filming.py"])
+
+
 
 
 # call(["ls", "-l"])
 # TODO Python module anschauen, so dass man nicht aus der bash neue scripts ausfuehren muss
-call(["python", "camera_test.py"])
-time.sleep(2)
-call(["bash", "./processing/pixelsorting"])
-
-
- 
- 
- # Work the camera with a button! 
- #time.sleep(0.001) # do not use all the cpu power
- #pressed = 0
- #pressed = read_digital_pin()
- #if pressed:
-    #when_pressed = time.time()
-    #time_pressed = time.time() - when_pressed
-    #while pressed:
-      #if time_pressed > 4:
-         #call("sudo halt -n") # turn of PI , when pressed for more than 4 seconds
-         ##call("sudo shutdown -h now") # turn of PI , when pressed for more than 4 seconds  
+#call(["python", "camera_test.py"])
+#time.sleep(2)
+#call(["bash", "./processing/pixelsorting"])

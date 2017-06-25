@@ -9,6 +9,11 @@ import time
 import requests
 import datetime
 
+os.putenv('SDL_VIDEODRIVER', 'fbcon')
+os.putenv('SDL_FBDEV'      , '/dev/fb1')
+
+
+
 pictureFileType = '.png'
 picturePath = '/home/pi/camera_processing/processing/pictures/'
 sensorDataFile = '/home/pi/camera_processing/processing/data_for_processing'
@@ -21,7 +26,7 @@ def get_pulse_data_from_websocket():
   result =  ws.recv()
   print "Received '%s'" % result
   ws.close()
-  
+  	
   try:
 		result = json.loads(result)
   except ValueError:
