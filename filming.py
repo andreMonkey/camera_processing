@@ -20,7 +20,11 @@ def film():
         # IDEA : for several sensor flip through the different sensors in a loop
         camera.annotate_text = 'PULSE: ' + str(get_data.get_pulse_data_from_websocket())
         camera.wait_recording(0.2)
+    #camera.stop_recording()    
+
+def stop_filming():
     camera.stop_recording()    
 
 
-film()
+
+#film()
