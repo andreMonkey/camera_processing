@@ -9,11 +9,11 @@ import filming
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+#GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 def main():
     GPIO.add_event_detect(15,GPIO.FALLING)
-    GPIO.add_event_callback(15,buttonEventHandler,100)
+    GPIO.add_event_callback(15,buttonEventHandler)
     filming.film()
 
 def buttonEventHandler():
@@ -22,6 +22,7 @@ def buttonEventHandler():
     main()
 
 main()
+
 except KeyboardInterrupt:  
     GPIO.cleanup()       # clean up GPIO on CTRL+C exit  
 #GPIO.cleanup()           # clean up GPIO on normal exit  
