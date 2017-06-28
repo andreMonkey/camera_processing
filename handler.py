@@ -11,15 +11,16 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 #GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-def main():
-    GPIO.add_event_detect(15,GPIO.FALLING)
-    GPIO.add_event_callback(15,buttonEventHandler)
-    filming.film()
-
 def buttonEventHandler():
     filming.stop_filming()
     call(["python", "camera_test.py"])
     main()
+
+def main():
+    GPIO.add_event_detect(15, GPIO.FALLING, callback=buttonEventHandler, bouncetime=300)  
+    #GPIO.add_event_detect(15,GPIO.FALLING)
+    #GPIO.add_event_callback(15,buttonEventHandler)
+    filming.film()
 
 main()
 
