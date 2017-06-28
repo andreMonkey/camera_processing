@@ -24,8 +24,9 @@ def main():
 
 main()
 
-except KeyboardInterrupt:  
-    GPIO.cleanup()       # clean up GPIO on CTRL+C exit  
+# except KeyboardInterrupt:  
+#    GPIO.cleanup()       # clean up GPIO on CTRL+C exit  
+
 #GPIO.cleanup()           # clean up GPIO on normal exit  
 
 
