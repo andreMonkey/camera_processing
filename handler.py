@@ -5,23 +5,35 @@ import time
 import RPi.GPIO as GPIO
 import time
 import filming
-
+import camera_test
 GPIO.setmode(GPIO.BCM)
 
 GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-#GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
-def buttonEventHandler():
+def setup_oximeter():
+    # set up oximeter
+    call(["sh", "setup_oximeter.sh"])
+
+def button_event_handler():
+    print("button")
     filming.stop_filming()
-    call(["python", "camera_test.py"])
+    camera_test.main()
     main()
 
 def main():
-    GPIO.add_event_detect(15, GPIO.FALLING, callback=buttonEventHandler, bouncetime=300)  
+    GPIO.add_event_detect(15, GPIO.FALLING, callback=button_event_handler, bouncetime=300)  
     #GPIO.add_event_detect(15,GPIO.FALLING)
     #GPIO.add_event_callback(15,buttonEventHandler)
+    #    GPIO.wait_for_edge(15, GPIO.FALLING)
     filming.film()
+ 
+ #   except KeyboardInterrupt:
+  #      exit()
 
+# actual programme
+
+#setup_oximeter() # do this only once
+# oximeter is setup now
 main()
 
 # except KeyboardInterrupt:  
@@ -29,9 +41,6 @@ main()
 
 #GPIO.cleanup()           # clean up GPIO on normal exit  
 
-
-# set up oximeter
-#call(["sh", "setup_oximeter.sh"])
 
 ## TODO: ADD multi thread processing!!!
 #while True:

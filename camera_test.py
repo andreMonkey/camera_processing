@@ -68,15 +68,15 @@ def logAllData(nameOfThePic, sensorValue):
 
 		print("did logging of picture name")
 
-	
-	
-# actual programme
-sensorValue = get_data.get_pulse_data_from_websocket()
-logSensorData(sensorValue)
 
-nameOfThePic = getNameOfThePic()
-print(nameOfThePic)
+def main():
+    # actual programme
+    sensorValue = get_data.get_pulse_data_from_websocket()
+    logSensorData(sensorValue)
 
-takePicture(nameOfThePic)
-logNameOfThePicture(nameOfThePic)
-logAllData(nameOfThePic, sensorValue)
+    nameOfThePic = getNameOfThePic()
+    print(nameOfThePic)
+
+    takePicture(nameOfThePic)
+    logNameOfThePicture(nameOfThePic)
+    logAllData(nameOfThePic, sensorValue)
