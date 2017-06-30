@@ -71,6 +71,7 @@ def logAllData(nameOfThePic, sensorValue):
 
 def main():
     # actual programme
+    print("arrived in camera_test.py")
     sensorValue = get_data.get_pulse_data_from_websocket()
     logSensorData(sensorValue)
 

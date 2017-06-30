@@ -1,9 +1,9 @@
 import RPi.GPIO as GPIO
-from picamera import PiCamera
+import picamera
 from time import sleep
 import datetime as dt
 
-camera = PiCamera()
+camera = picamera.PiCamera(resolution=(1280, 720), framerate=24)
 # pin-layout
 GPIO.setmode(GPIO.BOARD)
 # Pin 18 (GPIO 24) as input
@@ -20,9 +20,9 @@ while 1 :
         #camera.start_recording('video.h264')
         camera.rotation = 270
         camera.start_preview()
-        #camera.annotate_background = picamera.Color('red')
+        camera.annotate_background = picamera.Color('red')
         # timestamp camera.annotate_text = dt.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        #camera.annotate_text = 'PULSE: ' + str(get_data.get_pulse_data_from_websocket())
+        camera.annotate_text = 'PULSE: ' #+ str(get_data.get_pulse_data_from_websocket())
         camera.start_recording('timestamped.h264')
         start = dt.datetime.now()
         isRecording = 1
