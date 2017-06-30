@@ -40,7 +40,7 @@ def main():
         exit()
 
 # actual programme
-#setup_oximeter() # do this only once
+setup_oximeter() # do this only once
 setup_gpio()
 main()
 
