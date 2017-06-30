@@ -6,59 +6,43 @@ import RPi.GPIO as GPIO
 import time
 import filming
 import camera_test
-GPIO.setmode(GPIO.BCM)
 
-GPIO.setup(15, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+def setup_gpio():
+    # pin-layout
+    GPIO.setmode(GPIO.BOARD)
+    # Pin 18 (GPIO 24) as input
+    GPIO.setup(15, GPIO.IN, pull_up_down = GPIO.PUD_UP)
 
 def setup_oximeter():
     # set up oximeter
     call(["sh", "setup_oximeter.sh"])
 
-def button_event_handler():
-    print("button")
-    filming.stop_filming()
-    camera_test.main()
+def button_event_handler(argument):
+    print("button pressed")
+    camera = filming.film(True)
+    #print camera
+    #exit()	
+    GPIO.cleanup()
+    setup_gpio()
+    camera_test.main(camera)
+    #exit()
     main()
 
 def main():
-    GPIO.add_event_detect(15, GPIO.FALLING, callback=button_event_handler, bouncetime=300)  
-    #GPIO.add_event_detect(15,GPIO.FALLING)
-    #GPIO.add_event_callback(15,buttonEventHandler)
-    #    GPIO.wait_for_edge(15, GPIO.FALLING)
-    filming.film()
+    GPIO.add_event_detect(15, GPIO.FALLING)
+    GPIO.add_event_callback(15, button_event_handler)
+
+    try:
+        filming.film(False)
  
- #   except KeyboardInterrupt:
-  #      exit()
+    except KeyboardInterrupt:
+        GPIO.cleanup()
+        exit()
 
 # actual programme
-
 #setup_oximeter() # do this only once
-# oximeter is setup now
+setup_gpio()
 main()
-
-# except KeyboardInterrupt:  
-#    GPIO.cleanup()       # clean up GPIO on CTRL+C exit  
-
-#GPIO.cleanup()           # clean up GPIO on normal exit  
-
-
-## TODO: ADD multi thread processing!!!
-#while True:
-    #time.sleep(0.001) # do not use all the cpu power
-    ## The button has not been pressed - we are in filming mode
-    #if (GPIO.input(18) == True):
-        #filming.film()
-        #continue
-    ## Button has been pressed - we take a picture
-    #elif (GPIO.input(18) == False):
-        ## run script to take picture and save data
-        ## display foto and pixelsort (parallel??) 
-        ## run script to pixelsort
-        ## run script to display pixelsorted picture
-        ## run script to print picture
-        #call(["python", "camera_test.py"])
-##         call(["python", "filming.py"])
-
 
 
 # call(["ls", "-l"])

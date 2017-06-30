@@ -25,8 +25,6 @@ def logSensorData(sensorValue):
 		print("did logging to data-text-file")
 
 def getNameOfThePic(): 
-	
-	
 	# Scan for next available image slot
 	# TODO use time stamp as name of the pic!  string=time.strftime('%H:%M:%S', time.gmtime())
 	
@@ -39,11 +37,11 @@ def getNameOfThePic():
 		
 	return nameOfThePic
 
-def takePicture(nameOfThePic):
+def takePicture(camera, nameOfThePic):
 	print("taking picture #", nameOfThePic)
-	camera = picamera.PiCamera()
-	camera.resolution = (1920, 1080)
-	camera.start_preview()
+	#camera = picamera.PiCamera()
+	#camera.resolution = (1920, 1080)
+	#camera.start_preview()
 	camera.capture(picturePath + nameOfThePic + pictureFileType)
 
 def logNameOfThePicture(nameOfThePic):
@@ -69,14 +67,15 @@ def logAllData(nameOfThePic, sensorValue):
 		print("did logging of picture name")
 
 
-def main():
+def main(camera):
     # actual programme
+    print("taking picture now")
     sensorValue = get_data.get_pulse_data_from_websocket()
     logSensorData(sensorValue)
 
     nameOfThePic = getNameOfThePic()
     print(nameOfThePic)
 
-    takePicture(nameOfThePic)
+    takePicture(camera, nameOfThePic)
     logNameOfThePicture(nameOfThePic)
     logAllData(nameOfThePic, sensorValue)
