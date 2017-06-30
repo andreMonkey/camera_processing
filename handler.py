@@ -6,6 +6,7 @@ import RPi.GPIO as GPIO
 import time
 import filming
 import camera_test
+import progress_bar
 
 def setup_gpio():
     # pin-layout
@@ -20,12 +21,12 @@ def setup_oximeter():
 def button_event_handler(argument):
     print("button pressed")
     camera = filming.film(True)
-    #print camera
-    #exit()	
     GPIO.cleanup()
     setup_gpio()
     camera_test.main(camera)
-    #exit()
+    print("\n \n Transforming picture now. \n \n")
+    progress_bar.main()
+    call(["bash", "./processing/pixelsorting"])
     main()
 
 def main():

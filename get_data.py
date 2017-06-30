@@ -4,10 +4,11 @@ import json
 
 
 def get_pulse_data_from_websocket():
+  #return 250  # for testing
   ws = create_connection("ws://agilegw.local:8080/ws/device/ble987BF3738084/PULSE/subscribe")
-  print "Receiving..."
+  #print "Receiving..."
   result =  ws.recv()
-  print "Received '%s'" % result
+  #print "Received '%s'" % result
   ws.close()
 
   try:
@@ -20,8 +21,8 @@ def get_pulse_data_from_websocket():
 		#Data Format '[{"deviceID":"dummy001122334455","componentID":"DummyData","value":"24","unit":"dum","format":"","lastUpdate":1495723678802}]'
 		value = result.get('value')
 			
-		print("Sensor value:")
-		print value
+		#print("pulse sensor value:")
+		#print value
 		
 		return value
 

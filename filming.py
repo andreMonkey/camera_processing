@@ -3,21 +3,28 @@ import pygame
 import time
 import get_data
 import datetime as dt
+import pi3d
 
-camera = picamera.PiCamera(resolution=(1280, 720), framerate=24)
+W, H = 1280, 1020
+
+camera = picamera.PiCamera(resolution=(W, H), framerate=24)
+
 
 def film(close):
     if (close):
         print(close)
         camera.stop_preview()
-        #camera.close()
         return camera
-    print("fliming")    
+    #print("fliming")    
+    preview = camera.start_preview()
     camera.rotation = 270
-    camera.start_preview()
-    camera.annotate_background = picamera.Color('red')
-    print(str(get_data.get_pulse_data_from_websocket()))
-    camera.annotate_text = 'PULSE: ' + str(get_data.get_pulse_data_from_websocket())
-    start = dt.datetime.now()
+    preview.fullscreen = False
+    preview.window= (10,20,W,H)
+    ##camera.annotate_background = picamera.Color('red')
+    ##camera.annotate_text = 'PULSE: ' + str(get_data.get_pulse_data_from_websocket())
+    #start = dt.datetime.now()
+    
     while True:
-        camera.annotate_text = 'PULSE: ' + str(get_data.get_pulse_data_from_websocket())
+        if (not close):
+            print('PULSE: ' + str(get_data.get_pulse_data_from_websocket()))
+

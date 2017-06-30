@@ -27,11 +27,10 @@ def logSensorData(sensorValue):
 def getNameOfThePic(): 
 	# Scan for next available image slot
 	# TODO use time stamp as name of the pic!  string=time.strftime('%H:%M:%S', time.gmtime())
-	
 	saveIdx = 1
 	while True:
 		nameOfThePic =  'test_' + '%04d' % saveIdx # trying to save in png so that pixelsorting goes automatically
-		print ("looking for filename:" ,nameOfThePic)
+		#print ("looking for filename:" ,nameOfThePic)
 		if not os.path.isfile(picturePath + nameOfThePic + pictureFileType): break
 		saveIdx += 1
 		
@@ -39,19 +38,11 @@ def getNameOfThePic():
 
 def takePicture(camera, nameOfThePic):
 	print("taking picture #", nameOfThePic)
-	#camera = picamera.PiCamera()
-	#camera.resolution = (1920, 1080)
-	#camera.start_preview()
 	camera.capture(picturePath + nameOfThePic + pictureFileType)
 
 def logNameOfThePicture(nameOfThePic):
 	with open(nameOfTheLatestPicFile, "w") as text_file: # use option "a" for adding instead of overwriting
 		text_file.write(nameOfThePic)
-		
-		#timeStamp = datetime.datetime.now()	
-		#text_file.write("time:".format(timeStamp))
-
-		print("did logging of picture name")
 
 def logAllData(nameOfThePic, sensorValue):
 	with open(logFileAllData, "a") as text_file: # use option "a" for adding instead of overwriting
@@ -61,15 +52,10 @@ def logAllData(nameOfThePic, sensorValue):
 		text_file.write(',')
 		text_file.write('\n')
 
-		#timeStamp = datetime.datetime.now()	
-		#text_file.write("time:".format(timeStamp))
-
-		print("did logging of picture name")
-
 
 def main(camera):
     # actual programme
-    print("taking picture now")
+#    print("taking picture now")
     sensorValue = get_data.get_pulse_data_from_websocket()
     logSensorData(sensorValue)
 
