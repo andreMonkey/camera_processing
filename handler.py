@@ -19,10 +19,13 @@ def setup_oximeter():
 
 def button_event_handler(argument):
     print("button pressed")
-    filming.film(True)
+    camera = filming.film(True)
+    #print camera
+    #exit()	
     GPIO.cleanup()
     setup_gpio()
-    camera_test.main()
+    camera_test.main(camera)
+    #exit()
     main()
 
 def main():
@@ -37,7 +40,7 @@ def main():
         exit()
 
 # actual programme
-setup_oximeter() # do this only once
+#setup_oximeter() # do this only once
 setup_gpio()
 main()
 
