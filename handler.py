@@ -7,6 +7,7 @@ import time
 import filming
 import camera_test
 import progress_bar
+import display_picture
 
 def setup_gpio():
     # pin-layout
@@ -27,7 +28,7 @@ def button_event_handler(argument):
     print("\n \n Transforming picture now. \n \n")
     progress_bar.main()
     call(["bash", "./processing/pixelsorting"])
-    display_picture.display(sensorValue)
+    display_picture.displayPicture(sensorValue)
     main()
 
 def main():

@@ -30,3 +30,5 @@ def displayPicture(value):
     pygame.display.update() 
     time.sleep(5)  
     
+#getNameOfTheTransformedPic()
+#displayPicture(2)
