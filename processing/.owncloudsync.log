@@ -249,3 +249,359 @@
 #=#=#=# Syncrun started 2017-07-07T18:21:03
 #=#=#=#=# Propagation starts 2017-07-07T18:21:05 (last step: 1090 msec, total: 1090 msec)
 #=#=#=# Syncrun finished 2017-07-07T18:21:05 (last step: 39 msec, total: 1129 msec)
+#=#=#=# Syncrun started 2017-07-07T18:24:11
+#=#=#=#=# Propagation starts 2017-07-07T18:24:11 (last step: 648 msec, total: 648 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:24:12 (last step: 498 msec, total: 1145 msec)
+#=#=#=# Syncrun started 2017-07-07T18:25:00
+#=#=#=#=# Propagation starts 2017-07-07T18:25:01 (last step: 634 msec, total: 634 msec)
+||pictures/project_log_file|INST_SYNC|Up|1499451900|88eb199258e79fa9844ae751e5c44a2e|1119|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1096|1499451607|88eb199258e79fa9844ae751e5c44a2e|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0078.png|INST_NEW|Up|1499451900||2044664||3|Local file changed during sync.|0|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:25:01 (last step: 578 msec, total: 1211 msec)
+#=#=#=# Syncrun started 2017-07-07T18:25:03
+#=#=#=#=# Propagation starts 2017-07-07T18:25:04 (last step: 555 msec, total: 555 msec)
+18:25:04||pictures/project_log_file|INST_SYNC|Up|1499451900|c61dbb90556621096c191284f7396c63|1119|00000323oc3bhx8sazb5|4||204|1096|1499451607|88eb199258e79fa9844ae751e5c44a2e|00000323oc3bhx8sazb5|INST_NONE|
+18:25:04||pictures/test_0078.png|INST_NEW|Up|1499451900|703708962a55fd0c39f25a92e6235245|2044664|00000803oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:25:06 (last step: 2521 msec, total: 3075 msec)
+#=#=#=# Syncrun started 2017-07-07T18:25:16
+#=#=#=#=# Propagation starts 2017-07-07T18:25:18 (last step: 1880 msec, total: 1880 msec)
+18:25:18||transformed_pictures/test_0066_17.599998.png|INST_SYNC|Up|1499451914|6ffddf26461a6befc3d152e2110486b5|1864064|00000650oc3bhx8sazb5|4||204|1864443|1498834767|009a1e3df6b117a2b411095536587f4e|00000650oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:25:21 (last step: 3368 msec, total: 5247 msec)
+#=#=#=# Syncrun started 2017-07-07T18:26:04
+#=#=#=#=# Propagation starts 2017-07-07T18:26:05 (last step: 1257 msec, total: 1257 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:26:05 (last step: 48 msec, total: 1305 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:03
+#=#=#=#=# Propagation starts 2017-07-07T18:37:04 (last step: 1113 msec, total: 1113 msec)
+18:37:05||application.linux-armv6hf|INST_NEW|Up|1499452622||4096|00000815oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:05||application.linux-armv6hf/lib|INST_NEW|Up|1499452622||4096|00000821oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:05||application.linux-armv6hf/source|INST_NEW|Up|1499452622||4096|00000824oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:05||application.linux-armv6hf/sketch_170707_processing|INST_NEW|Up|1499458552|ddc38796a1f8f264c2010654a47e618f|352|00000827oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:06||application.linux-armv6hf/lib/gluegen-rt.jar|INST_NEW|Up|1445621000|5151979f50f47ec41702f5c104166e7b|345605|00000830oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:06||application.linux-armv6hf/lib/jogl-all-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|1d5f81ac1f75c2ef5651523ff3834a0c|164852|00000833oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:06||application.linux-armv6hf/lib/gluegen-rt-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|406a706e48fd9d2cbd9c357d76fc2f29|3050|00000836oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:06||application.linux-armv6hf/lib/core.jar|INST_NEW|Up|1445621000|5d3d16078d2daaf5466d2ea8f4d4ef42|1004755|00000839oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:08||application.linux-armv6hf/source/sketch_170707_processing.java|INST_NEW|Up|1499458550|31495281a52d562f35b3c2ce3ff02240|8285|00000842oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:08||application.linux-armv6hf/lib/sketch_170707_processing.jar|INST_NEW|Up|1499458552|2f1b65a54fb7c57162eef400f6b81e65|3485|00000845oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:08||application.linux-armv6hf/source/sketch_170707_processing.pde|INST_NEW|Up|1499458552|b396c6bfe2979b6b3dcf3cfe47b0a7fa|7872|00000848oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:08||application.linux-armv6hf/lib/jogl-all.jar|INST_NEW|Up|1445621000|06f401bbabb5b4ba8fd1c4eb2d8e2ae6|3414448|00000851oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:11 (last step: 6573 msec, total: 7686 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:18
+#=#=#=#=# Propagation starts 2017-07-07T18:37:21 (last step: 2322 msec, total: 2322 msec)
+18:37:21||application.linux-armv6hf/lib/core.jar|INST_REMOVE|Up|1445621000|5d3d16078d2daaf5466d2ea8f4d4ef42|1004755|00000839oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:22 (last step: 1035 msec, total: 3358 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:25
+#=#=#=#=# Propagation starts 2017-07-07T18:37:26 (last step: 1499 msec, total: 1499 msec)
+18:37:26||application.linux-armv6hf/lib/gluegen-rt-natives-linux-armv6hf.jar|INST_REMOVE|Up|1445621000|406a706e48fd9d2cbd9c357d76fc2f29|3050|00000836oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:37:26||application.linux-armv6hf/lib/jogl-all-natives-linux-armv6hf.jar|INST_REMOVE|Up|1445621000|1d5f81ac1f75c2ef5651523ff3834a0c|164852|00000833oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:37:26||application.linux-armv6hf/lib/gluegen-rt.jar|INST_REMOVE|Up|1445621000|5151979f50f47ec41702f5c104166e7b|345605|00000830oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:27 (last step: 1019 msec, total: 2518 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:30
+#=#=#=#=# Propagation starts 2017-07-07T18:37:31 (last step: 1544 msec, total: 1544 msec)
+18:37:31||application.linux-armv6hf/lib/sketch_170707_processing.jar -> lib/sketch_170707_processing.jar|INST_RENAME|Up|1499458552|2f1b65a54fb7c57162eef400f6b81e65|3485|00000845oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:32||application.linux-armv6hf/sketch_170707_processing -> sketch_170707_processing|INST_RENAME|Up|1499458552|ddc38796a1f8f264c2010654a47e618f|352|00000827oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:33||application.linux-armv6hf/source/sketch_170707_processing.java -> source/sketch_170707_processing.java|INST_RENAME|Up|1499458550|31495281a52d562f35b3c2ce3ff02240|8285|00000842oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:33||application.linux-armv6hf/source/sketch_170707_processing.pde -> source/sketch_170707_processing.pde|INST_RENAME|Up|1499458552|b396c6bfe2979b6b3dcf3cfe47b0a7fa|7872|00000848oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:37:34||application.linux-armv6hf/source|INST_REMOVE|Up|1499458552|595fd4d5404f8|0|00000824oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:37:34||application.linux-armv6hf/lib|INST_REMOVE|Up|1499452647|595fd4e75ed12|0|00000821oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:35 (last step: 3377 msec, total: 4921 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:38
+#=#=#=#=# Propagation starts 2017-07-07T18:37:40 (last step: 2027 msec, total: 2027 msec)
+18:37:40||pixelsorting -> old_pixelsorting|INST_RENAME|Up|1496520534|414681e529ba8af2ddc2b473b47adeb7|328|00000293oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:41 (last step: 802 msec, total: 2830 msec)
+#=#=#=# Syncrun started 2017-07-07T18:37:49
+#=#=#=#=# Propagation starts 2017-07-07T18:37:50 (last step: 890 msec, total: 890 msec)
+18:37:50||sketch_170707_processing -> pixelsorting|INST_RENAME|Up|1499458552|ddc38796a1f8f264c2010654a47e618f|352|00000827oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:37:51 (last step: 641 msec, total: 1531 msec)
+#=#=#=# Syncrun started 2017-07-07T18:38:33
+#=#=#=#=# Propagation starts 2017-07-07T18:38:34 (last step: 614 msec, total: 614 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:38:34 (last step: 27 msec, total: 641 msec)
+#=#=#=# Syncrun started 2017-07-07T18:39:28
+#=#=#=#=# Propagation starts 2017-07-07T18:39:29 (last step: 622 msec, total: 622 msec)
+||name_of_the_pic|INST_SYNC|Up|1499452768|7db2634c85582203e4c1b8add18c0232|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499451761|7db2634c85582203e4c1b8add18c0232|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499452768|c61dbb90556621096c191284f7396c63|1142|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1119|1499451900|c61dbb90556621096c191284f7396c63|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0079.png|INST_NEW|Up|1499452768||1913860||3|Local file changed during sync.|0|0|0|||INST_NONE|
+18:39:29||data_for_processing|INST_SYNC|Up|1499452766|b10f7b9a902b7e95c7f8c64f5cbe3561|4|00000287oc3bhx8sazb5|4||204|4|1499451761|29530ff28c3ca53a820060e44635ba00|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:39:30 (last step: 1315 msec, total: 1938 msec)
+#=#=#=# Syncrun started 2017-07-07T18:39:33
+#=#=#=#=# Propagation starts 2017-07-07T18:39:33 (last step: 612 msec, total: 612 msec)
+18:39:33||name_of_the_pic|INST_SYNC|Up|1499452768|bf6b9e5902f260062ef1985fbb4d62ad|9|00000290oc3bhx8sazb5|4||204|9|1499451761|7db2634c85582203e4c1b8add18c0232|00000290oc3bhx8sazb5|INST_NONE|
+18:39:33||pictures/project_log_file|INST_SYNC|Up|1499452768|fb033b22c82326f51c2a030bbadbd8a7|1142|00000323oc3bhx8sazb5|4||204|1119|1499451900|c61dbb90556621096c191284f7396c63|00000323oc3bhx8sazb5|INST_NONE|
+18:39:33||pictures/test_0079.png|INST_NEW|Up|1499452768|1b7d67050c3ac6f61e3f99681aa35f7b|1913860|00000869oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:39:36 (last step: 2333 msec, total: 2945 msec)
+#=#=#=# Syncrun started 2017-07-07T18:40:21
+#=#=#=#=# Propagation starts 2017-07-07T18:40:23 (last step: 1661 msec, total: 1661 msec)
+18:40:23||transformed_pictures/test_0039_16.699997.png|INST_REMOVE|Up|1496514853|dff8fbf2b6045a5e24bef7c9a9fc7471|2780219|00000605oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:23||transformed_pictures/test_0044_32.9.png|INST_REMOVE|Up|1497706113|7254deeaf7e8ce9560645b9646e84315|2691754|00000617oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:23||transformed_pictures/test_0045_NaN.png|INST_REMOVE|Up|1497722690|59f466c64347235348842646c5031e56|3103028|00000629oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:23||transformed_pictures/test_0041_-265.0.png|INST_REMOVE|Up|1496515445|c052384c0d448868f0e451cb6adbc182|2805772|00000608oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:23||transformed_pictures/test_0041_77.0.png|INST_REMOVE|Up|1496515512|905d648b7d6d6fc3fc7a3f6f0280e905|2935829|00000614oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:23||transformed_pictures/test_0041_16.699997.png|INST_REMOVE|Up|1496515129|eb2e815d27210e56b92f9efca9c3f3fd|2800238|00000611oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0048_31.100002.png|INST_REMOVE|Up|1497723689|f30240c7ebbd8c53e7eae4ff009f7296|1332257|00000620oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0060_14.0.png|INST_REMOVE|Up|1498831035|b4950f747094b600ce4f7d0e0f3d56a6|843520|00000638oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0058_10.400002.png|INST_REMOVE|Up|1498830705|44b91bc2b1b9ef24198b7feb48790190|812835|00000632oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0059_16.699997.png|INST_REMOVE|Up|1498830876|09f492cf604c52304ed950fa927642e2|848911|00000635oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0047_32.9.png|INST_REMOVE|Up|1497723646|cb2c53a9aec80a667b7fa627445b4f3f|1858265|00000623oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:24||transformed_pictures/test_0063_3.2000046.png|INST_REMOVE|Up|1498834093|afe5f61f5accc381c79ba0d7cc2c23f8|1800712|00000641oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:25||transformed_pictures/test_0064_9.5.png|INST_REMOVE|Up|1498834374|87b32b2fa80534f9067d4ce69bd4d760|1709493|00000644oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:25||transformed_pictures/test_0065_7.699997.png|INST_REMOVE|Up|1498834572|f16b2aeaaf6b1e6474a80286a3b2e690|2245974|00000647oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:25||transformed_pictures/test_0067_26.599998.png|INST_REMOVE|Up|1498835322|301229d80dca058c0ef636f73396b4aa|1403105|00000653oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:26||transformed_pictures/test_0068_9.5.png|INST_REMOVE|Up|1498838036|c42ffd218796632bb3b12cbf912daccf|1729251|00000656oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:26||transformed_pictures/test_0069_-1.300003.png|INST_REMOVE|Up|1498838399|6b8ce9678621518390159b67f26da340|1643748|00000659oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:25||transformed_pictures/test_0066_17.599998.png|INST_REMOVE|Up|1499451914|6ffddf26461a6befc3d152e2110486b5|1864064|00000650oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:27||transformed_pictures/test_0070_15.800003.png|INST_REMOVE|Up|1498838667|580eb26c588ed7ac7f44440668670026|2061823|00000665oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:27||transformed_pictures/test_0071_-134.5.png|INST_REMOVE|Up|1498838705|680c643ee4cda6eb62a0d9c52df0c49f|2140323|00000668oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:28||transformed_pictures/test_0077_32.9.png|INST_REMOVE|Up|1499451621|0042c7ea41932ff570f49b875835d3a5|1850322|00000782oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:28||transformed_pictures/test_0073_14.900002.png|INST_REMOVE|Up|1499450973|6d7a524e7665b7e7fb95ef58269ae4a1|1958222|00000686oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+18:40:28||transformed_pictures/test_0076_33.8.png|INST_REMOVE|Up|1499451552|26385d2c519933b7c2bcb2840fc7a125|1056255|00000764oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:40:28 (last step: 5878 msec, total: 7539 msec)
+#=#=#=# Syncrun started 2017-07-07T18:41:04
+#=#=#=#=# Propagation starts 2017-07-07T18:41:05 (last step: 1050 msec, total: 1050 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:41:05 (last step: 38 msec, total: 1089 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:15
+#=#=#=#=# Propagation starts 2017-07-07T18:43:16 (last step: 560 msec, total: 560 msec)
+18:43:16||lib|INST_REMOVE|Up|1499452652|595fd4ec58820|0|00000275oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:17 (last step: 1215 msec, total: 1775 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:19
+#=#=#=#=# Propagation starts 2017-07-07T18:43:20 (last step: 466 msec, total: 466 msec)
+18:43:20||source|INST_REMOVE|Up|1499452653|595fd4edf1db4|0|00000284oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:21 (last step: 1102 msec, total: 1569 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:24
+#=#=#=#=# Propagation starts 2017-07-07T18:43:25 (last step: 827 msec, total: 827 msec)
+18:43:25||old_pixelsorting|INST_REMOVE|Up|1496520534|414681e529ba8af2ddc2b473b47adeb7|328|00000293oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:26 (last step: 1119 msec, total: 1947 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:28
+#=#=#=#=# Propagation starts 2017-07-07T18:43:28 (last step: 546 msec, total: 546 msec)
+18:43:28||pixelsorting|INST_REMOVE|Up|1499458552|ddc38796a1f8f264c2010654a47e618f|352|00000827oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:29 (last step: 912 msec, total: 1457 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:31
+#=#=#=#=# Propagation starts 2017-07-07T18:43:32 (last step: 580 msec, total: 580 msec)
+18:43:32||application.linux-armv6hf|INST_REMOVE|Up|1499452654|595fd4eec495b|0|00000815oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:33 (last step: 905 msec, total: 1484 msec)
+#=#=#=# Syncrun started 2017-07-07T18:43:51
+#=#=#=#=# Propagation starts 2017-07-07T18:43:52 (last step: 581 msec, total: 581 msec)
+18:43:52||lib|INST_NEW|Up|1499453030||4096|00000875oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:52||source|INST_NEW|Up|1499453030||4096|00000878oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:52||sketch_170707_processing|INST_NEW|Up|1499460172|11ec26d277a033c194710cd42b2626d2|352|00000884oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:53||lib/gluegen-rt.jar|INST_NEW|Up|1445621000|832623b7c2d9675083a8df1cf714a837|345605|00000887oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:53||lib/gluegen-rt-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|6bdbbfe4c2cdcad1ec46613425fe433d|3050|00000890oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:53||lib/jogl-all-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|aff7cc764a6f68fe8f902d47dbd68762|164852|00000893oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:53||lib/core.jar|INST_NEW|Up|1445621000|18562ba89f416dcc6d44572f6b25ad5e|1004755|00000896oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:54||lib/sketch_170707_processing.jar|INST_NEW|Up|1499460172|e755d2df000e48f73a8b5a3febc39b3f|3498|00000902oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:54||source/sketch_170707_processing.java|INST_NEW|Up|1499460172|0b9487eb09aa56d1ce0c542256e72292|8337|00000905oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:55||source/sketch_170707_processing.pde|INST_NEW|Up|1499460172|45e0c424f4319755a9274b4a768a8888|7924|00000908oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+18:43:54||lib/jogl-all.jar|INST_NEW|Up|1445621000|0d62e0492e07c4e18b931b0c4735bfb5|3414448|00000911oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:43:57 (last step: 5359 msec, total: 5941 msec)
+#=#=#=# Syncrun started 2017-07-07T18:44:01
+#=#=#=#=# Propagation starts 2017-07-07T18:44:03 (last step: 1690 msec, total: 1690 msec)
+18:44:03||sketch_170707_processing -> pixelsorting|INST_RENAME|Up|1499460172|11ec26d277a033c194710cd42b2626d2|352|00000884oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:44:04 (last step: 1357 msec, total: 3047 msec)
+#=#=#=# Syncrun started 2017-07-07T18:45:03
+#=#=#=#=# Propagation starts 2017-07-07T18:45:04 (last step: 684 msec, total: 684 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:45:04 (last step: 40 msec, total: 725 msec)
+#=#=#=# Syncrun started 2017-07-07T18:48:15
+#=#=#=#=# Propagation starts 2017-07-07T18:48:16 (last step: 1212 msec, total: 1212 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:48:16 (last step: 31 msec, total: 1244 msec)
+#=#=#=# Syncrun started 2017-07-07T18:50:50
+#=#=#=#=# Propagation starts 2017-07-07T18:50:51 (last step: 670 msec, total: 670 msec)
+||name_of_the_pic|INST_SYNC|Up|1499453450|bf6b9e5902f260062ef1985fbb4d62ad|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499452768|bf6b9e5902f260062ef1985fbb4d62ad|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499453450|fb033b22c82326f51c2a030bbadbd8a7|1165|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1142|1499452768|fb033b22c82326f51c2a030bbadbd8a7|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0080.png|INST_NEW|Up|1499453450||1964894||3|Local file changed during sync.|0|0|0|||INST_NONE|
+18:50:51||data_for_processing|INST_SYNC|Up|1499453448|9203c84d8fb93f92794662e67b978017|4|00000287oc3bhx8sazb5|4||204|4|1499452766|b10f7b9a902b7e95c7f8c64f5cbe3561|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:50:52 (last step: 1364 msec, total: 2034 msec)
+#=#=#=# Syncrun started 2017-07-07T18:50:55
+#=#=#=#=# Propagation starts 2017-07-07T18:50:55 (last step: 495 msec, total: 495 msec)
+18:50:55||name_of_the_pic|INST_SYNC|Up|1499453450|ecc952a90460da71b64293c6c3604ccc|9|00000290oc3bhx8sazb5|4||204|9|1499452768|bf6b9e5902f260062ef1985fbb4d62ad|00000290oc3bhx8sazb5|INST_NONE|
+18:50:55||pictures/project_log_file|INST_SYNC|Up|1499453450|a7d1f1fdf8715bf576592c4b2bb23270|1165|00000323oc3bhx8sazb5|4||204|1142|1499452768|fb033b22c82326f51c2a030bbadbd8a7|00000323oc3bhx8sazb5|INST_NONE|
+18:50:55||pictures/test_0080.png|INST_NEW|Up|1499453450|19290a0a3cf0f011cd9986bbd0ff4574|1964894|00000929oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:50:58 (last step: 2430 msec, total: 2925 msec)
+#=#=#=# Syncrun started 2017-07-07T18:51:04
+#=#=#=#=# Propagation starts 2017-07-07T18:51:06 (last step: 1245 msec, total: 1245 msec)
+18:51:06||transformed_pictures/test_0080.png|INST_NEW|Up|1499453464|7c0475a40fda17b208607cb3fa8aff12|1878554|00000932oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:51:08 (last step: 2642 msec, total: 3887 msec)
+#=#=#=# Syncrun started 2017-07-07T18:51:49
+#=#=#=#=# Propagation starts 2017-07-07T18:51:50 (last step: 1071 msec, total: 1071 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:51:51 (last step: 45 msec, total: 1116 msec)
+#=#=#=# Syncrun started 2017-07-07T18:51:53
+#=#=#=#=# Propagation starts 2017-07-07T18:51:54 (last step: 655 msec, total: 655 msec)
+||name_of_the_pic|INST_SYNC|Up|1499453513|ecc952a90460da71b64293c6c3604ccc|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499453450|ecc952a90460da71b64293c6c3604ccc|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499453513|a7d1f1fdf8715bf576592c4b2bb23270|1188|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1165|1499453450|a7d1f1fdf8715bf576592c4b2bb23270|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0081.png|INST_NEW|Up|1499453513||2309972||3|Local file changed during sync.|0|0|0|||INST_NONE|
+18:51:54||data_for_processing|INST_SYNC|Up|1499453511|76b07e3abba4da485e4558452edcb8c8|4|00000287oc3bhx8sazb5|4||204|4|1499453448|9203c84d8fb93f92794662e67b978017|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:51:55 (last step: 1312 msec, total: 1967 msec)
+#=#=#=# Syncrun started 2017-07-07T18:51:57
+#=#=#=#=# Propagation starts 2017-07-07T18:51:58 (last step: 602 msec, total: 602 msec)
+18:51:58||name_of_the_pic|INST_SYNC|Up|1499453513|23e0d0a0cfcd09167228102cdd97f05b|9|00000290oc3bhx8sazb5|4||204|9|1499453450|ecc952a90460da71b64293c6c3604ccc|00000290oc3bhx8sazb5|INST_NONE|
+18:51:58||pictures/project_log_file|INST_SYNC|Up|1499453513|d3e4c13f6fc21f475502dda69f8835b9|1188|00000323oc3bhx8sazb5|4||204|1165|1499453450|a7d1f1fdf8715bf576592c4b2bb23270|00000323oc3bhx8sazb5|INST_NONE|
+18:51:58||pictures/test_0081.png|INST_NEW|Up|1499453513|f31b86ca769ee52cfdb828ec440cdefb|2309972|00000947oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:01 (last step: 2746 msec, total: 3347 msec)
+#=#=#=# Syncrun started 2017-07-07T18:52:07
+#=#=#=#=# Propagation starts 2017-07-07T18:52:08 (last step: 1147 msec, total: 1147 msec)
+||transformed_pictures/test_0081.png|INST_NEW|Up|1499453527||2148458||3|Local file changed during sync.|0|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:08 (last step: 90 msec, total: 1237 msec)
+#=#=#=# Syncrun started 2017-07-07T18:52:10
+#=#=#=#=# Propagation starts 2017-07-07T18:52:11 (last step: 604 msec, total: 604 msec)
+18:52:11||transformed_pictures/test_0081.png|INST_NEW|Up|1499453527|f5f5f357b89cb23a9d6856c2a0b758ea|2148458|00000950oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:14 (last step: 3517 msec, total: 4120 msec)
+#=#=#=# Syncrun started 2017-07-07T18:52:24
+#=#=#=#=# Propagation starts 2017-07-07T18:52:25 (last step: 1073 msec, total: 1073 msec)
+18:52:27||data_for_processing|INST_SYNC|Up|1499453542|d0b584a2cc210db4689711b70866aed3|4|00000287oc3bhx8sazb5|4||204|4|1499453511|76b07e3abba4da485e4558452edcb8c8|00000287oc3bhx8sazb5|INST_NONE|
+18:52:27||name_of_the_pic|INST_SYNC|Up|1499453544|9a40be2a75e8a4c4c2684cf68e9e11bb|9|00000290oc3bhx8sazb5|4||204|9|1499453513|23e0d0a0cfcd09167228102cdd97f05b|00000290oc3bhx8sazb5|INST_NONE|
+18:52:27||pictures/project_log_file|INST_SYNC|Up|1499453544|aca6d12e8fc05c89d96aee4eea49987d|1211|00000323oc3bhx8sazb5|4||204|1188|1499453513|d3e4c13f6fc21f475502dda69f8835b9|00000323oc3bhx8sazb5|INST_NONE|
+18:52:27||pictures/test_0082.png|INST_NEW|Up|1499453544|0c1f2cdaab3fab789c3749d58e0f8130|1984778|00000965oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:29 (last step: 3682 msec, total: 4756 msec)
+#=#=#=# Syncrun started 2017-07-07T18:52:37
+#=#=#=#=# Propagation starts 2017-07-07T18:52:38 (last step: 1070 msec, total: 1070 msec)
+||transformed_pictures/test_0082.png|INST_NEW|Up|1499453557||1459170||3|Local file changed during sync.|0|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:38 (last step: 94 msec, total: 1165 msec)
+#=#=#=# Syncrun started 2017-07-07T18:52:40
+#=#=#=#=# Propagation starts 2017-07-07T18:52:41 (last step: 625 msec, total: 625 msec)
+18:52:41||transformed_pictures/test_0082.png|INST_NEW|Up|1499453557|3691d151cb5ae39c5e60a2b92cc5c164|1459170|00000968oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T18:52:43 (last step: 2255 msec, total: 2881 msec)
+#=#=#=# Syncrun started 2017-07-07T18:53:19
+#=#=#=#=# Propagation starts 2017-07-07T18:53:20 (last step: 999 msec, total: 999 msec)
+#=#=#=# Syncrun finished 2017-07-07T18:53:20 (last step: 40 msec, total: 1039 msec)
+#=#=#=# Syncrun started 2017-07-07T19:01:43
+#=#=#=#=# Propagation starts 2017-07-07T19:01:44 (last step: 787 msec, total: 787 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:01:44 (last step: 27 msec, total: 814 msec)
+#=#=#=# Syncrun started 2017-07-07T19:05:33
+#=#=#=#=# Propagation starts 2017-07-07T19:05:34 (last step: 1113 msec, total: 1113 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:05:34 (last step: 30 msec, total: 1143 msec)
+#=#=#=# Syncrun started 2017-07-07T19:07:31
+#=#=#=#=# Propagation starts 2017-07-07T19:07:32 (last step: 762 msec, total: 762 msec)
+||name_of_the_pic|INST_SYNC|Up|1499454451|9a40be2a75e8a4c4c2684cf68e9e11bb|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499453544|9a40be2a75e8a4c4c2684cf68e9e11bb|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499454451|aca6d12e8fc05c89d96aee4eea49987d|1234|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1211|1499453544|aca6d12e8fc05c89d96aee4eea49987d|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0083.png|INST_NEW|Up|1499454451||2073727||3|Local file changed during sync.|0|0|0|||INST_NONE|
+19:07:32||data_for_processing|INST_SYNC|Up|1499454449|cb40dc8454d6d9d7b0cd42ff7e1a5687|4|00000287oc3bhx8sazb5|4||204|4|1499453542|d0b584a2cc210db4689711b70866aed3|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:07:36 (last step: 3711 msec, total: 4473 msec)
+#=#=#=# Syncrun started 2017-07-07T19:07:39
+#=#=#=#=# Propagation starts 2017-07-07T19:07:40 (last step: 638 msec, total: 638 msec)
+19:07:40||name_of_the_pic|INST_SYNC|Up|1499454451|b0e46f74c2a8e27df226fce19dc9d7c3|9|00000290oc3bhx8sazb5|4||204|9|1499453544|9a40be2a75e8a4c4c2684cf68e9e11bb|00000290oc3bhx8sazb5|INST_NONE|
+19:07:40||pictures/project_log_file|INST_SYNC|Up|1499454451|8e1a00e7524374c94d6e00914946f594|1234|00000323oc3bhx8sazb5|4||204|1211|1499453544|aca6d12e8fc05c89d96aee4eea49987d|00000323oc3bhx8sazb5|INST_NONE|
+19:07:40||pictures/test_0083.png|INST_NEW|Up|1499454451|f710af28ce8906556bac087e000df883|2073727|00000986oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:07:44 (last step: 4242 msec, total: 4881 msec)
+#=#=#=# Syncrun started 2017-07-07T19:07:47
+#=#=#=#=# Propagation starts 2017-07-07T19:07:49 (last step: 1142 msec, total: 1143 msec)
+19:07:49||transformed_pictures/test_0083.png|INST_NEW|Up|1499454465|d9980a5433c3ce0204327be36732f1b3|2064535|00000989oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:07:52 (last step: 3849 msec, total: 4992 msec)
+#=#=#=# Syncrun started 2017-07-07T19:08:38
+#=#=#=#=# Propagation starts 2017-07-07T19:08:39 (last step: 1141 msec, total: 1141 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:08:39 (last step: 66 msec, total: 1208 msec)
+#=#=#=# Syncrun started 2017-07-07T19:08:50
+#=#=#=#=# Propagation starts 2017-07-07T19:08:51 (last step: 756 msec, total: 756 msec)
+||name_of_the_pic|INST_SYNC|Up|1499454530|b0e46f74c2a8e27df226fce19dc9d7c3|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499454451|b0e46f74c2a8e27df226fce19dc9d7c3|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499454530|8e1a00e7524374c94d6e00914946f594|1257|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1234|1499454451|8e1a00e7524374c94d6e00914946f594|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0084.png|INST_NEW|Up|1499454530||2023889||3|Local file changed during sync.|0|0|0|||INST_NONE|
+19:08:51||data_for_processing|INST_SYNC|Up|1499454528|1405cd343279c0104294e4db9016b77c|4|00000287oc3bhx8sazb5|4||204|4|1499454449|cb40dc8454d6d9d7b0cd42ff7e1a5687|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:08:55 (last step: 4299 msec, total: 5054 msec)
+#=#=#=# Syncrun started 2017-07-07T19:08:59
+#=#=#=#=# Propagation starts 2017-07-07T19:08:59 (last step: 526 msec, total: 526 msec)
+19:08:59||name_of_the_pic|INST_SYNC|Up|1499454530|39a2e802ebb5e077ed75fae6becfc99c|9|00000290oc3bhx8sazb5|4||204|9|1499454451|b0e46f74c2a8e27df226fce19dc9d7c3|00000290oc3bhx8sazb5|INST_NONE|
+19:08:59||pictures/project_log_file|INST_SYNC|Up|1499454530|10a6aecff515ede94ce2fc318c032272|1257|00000323oc3bhx8sazb5|4||204|1234|1499454451|8e1a00e7524374c94d6e00914946f594|00000323oc3bhx8sazb5|INST_NONE|
+19:09:00||pictures/test_0084.png|INST_NEW|Up|1499454530|dd0a13dc5478a4e741eeac837269af28|2023889|00001007oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:09:03 (last step: 3462 msec, total: 3989 msec)
+#=#=#=# Syncrun started 2017-07-07T19:09:06
+#=#=#=#=# Propagation starts 2017-07-07T19:09:07 (last step: 1318 msec, total: 1318 msec)
+19:09:07||transformed_pictures/test_0084.png|INST_NEW|Up|1499454542|ab9e579eb63ac7bb33550aa0e8cac0d3|2003849|00001010oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:09:09 (last step: 2302 msec, total: 3620 msec)
+#=#=#=# Syncrun started 2017-07-07T19:10:07
+#=#=#=#=# Propagation starts 2017-07-07T19:10:09 (last step: 1082 msec, total: 1082 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:10:09 (last step: 45 msec, total: 1128 msec)
+#=#=#=# Syncrun started 2017-07-07T19:14:31
+#=#=#=#=# Propagation starts 2017-07-07T19:14:32 (last step: 703 msec, total: 703 msec)
+19:14:32||source|INST_REMOVE|Up|1499460172|595fd66bd4134|0|00000878oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+19:14:32||lib|INST_REMOVE|Up|1499453037|595fd66d9ab32|0|00000875oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:14:33 (last step: 1331 msec, total: 2034 msec)
+#=#=#=# Syncrun started 2017-07-07T19:14:35
+#=#=#=#=# Propagation starts 2017-07-07T19:14:36 (last step: 548 msec, total: 548 msec)
+19:14:36||lib|INST_NEW|Up|1499454874||4096|00001016oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:36||pixelsorting|INST_REMOVE|Up|1499460172|11ec26d277a033c194710cd42b2626d2|352|00000884oc3bhx8sazb5|4||204|0|0|||INST_NONE|
+19:14:36||source|INST_NEW|Up|1499454874||4096|00001022oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:36||sketch_170707_processing|INST_NEW|Up|1499461788|2d2fdb16fc16553194c8c40aae5cb73b|352|00001025oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:37||lib/gluegen-rt.jar|INST_NEW|Up|1445621000|07ddff53cbf9acf566cee71b23adc729|345605|00001028oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:37||lib/gluegen-rt-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|f6b6873b183d8658072f83862aba080c|3050|00001031oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:37||lib/jogl-all-natives-linux-armv6hf.jar|INST_NEW|Up|1445621000|c0d6858fe0636047df47dfc47fbcc3b2|164852|00001037oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:37||lib/core.jar|INST_NEW|Up|1445621000|ad6763725a9c6aae2ad513e58c86de67|1004755|00001040oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:38||lib/sketch_170707_processing.jar|INST_NEW|Up|1499461788|fedaf5c33b70ffed1ffc0f18becce66d|3500|00001043oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:38||source/sketch_170707_processing.java|INST_NEW|Up|1499461788|ff937d535b508db64936e6bd4f414d7c|8337|00001046oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:39||source/sketch_170707_processing.pde|INST_NEW|Up|1499461788|3b6b8ab1ff4c597a6f0037f7f5a4b36e|7924|00001049oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+19:14:38||lib/jogl-all.jar|INST_NEW|Up|1445621000|b406a00bba46ee4366ee4b8345f6bbb8|3414448|00001052oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:14:42 (last step: 5793 msec, total: 6341 msec)
+#=#=#=# Syncrun started 2017-07-07T19:14:46
+#=#=#=#=# Propagation starts 2017-07-07T19:14:47 (last step: 1418 msec, total: 1418 msec)
+19:14:47||sketch_170707_processing -> pixelsorting|INST_RENAME|Up|1499461788|2d2fdb16fc16553194c8c40aae5cb73b|352|00001025oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:14:48 (last step: 584 msec, total: 2001 msec)
+#=#=#=# Syncrun started 2017-07-07T19:15:38
+#=#=#=#=# Propagation starts 2017-07-07T19:15:38 (last step: 504 msec, total: 504 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:15:38 (last step: 31 msec, total: 535 msec)
+#=#=#=# Syncrun started 2017-07-07T19:16:00
+#=#=#=#=# Propagation starts 2017-07-07T19:16:00 (last step: 728 msec, total: 728 msec)
+||name_of_the_pic|INST_SYNC|Up|1499454960|39a2e802ebb5e077ed75fae6becfc99c|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499454530|39a2e802ebb5e077ed75fae6becfc99c|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499454960|10a6aecff515ede94ce2fc318c032272|1280|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1257|1499454530|10a6aecff515ede94ce2fc318c032272|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0085.png|INST_NEW|Up|1499454959||2321947||3|Local file changed during sync.|0|0|0|||INST_NONE|
+19:16:00||data_for_processing|INST_SYNC|Up|1499454958|1c42454eead837035ede15e6f8b64edb|4|00000287oc3bhx8sazb5|4||204|4|1499454528|1405cd343279c0104294e4db9016b77c|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:16:02 (last step: 1436 msec, total: 2164 msec)
+#=#=#=# Syncrun started 2017-07-07T19:16:04
+#=#=#=#=# Propagation starts 2017-07-07T19:16:05 (last step: 589 msec, total: 589 msec)
+19:16:05||name_of_the_pic|INST_SYNC|Up|1499454960|704917b255f81b3c2fff6da0a1c42d02|9|00000290oc3bhx8sazb5|4||204|9|1499454530|39a2e802ebb5e077ed75fae6becfc99c|00000290oc3bhx8sazb5|INST_NONE|
+19:16:05||pictures/project_log_file|INST_SYNC|Up|1499454960|dc3c1833e4c5fa91544a50cbdf4fea06|1280|00000323oc3bhx8sazb5|4||204|1257|1499454530|10a6aecff515ede94ce2fc318c032272|00000323oc3bhx8sazb5|INST_NONE|
+19:16:05||pictures/test_0085.png|INST_NEW|Up|1499454959|9706fb631671b8ecaddba1ed990d4415|2321947|00001070oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:16:07 (last step: 2820 msec, total: 3408 msec)
+#=#=#=# Syncrun started 2017-07-07T19:16:12
+#=#=#=#=# Propagation starts 2017-07-07T19:16:14 (last step: 2244 msec, total: 2244 msec)
+19:16:14||transformed_pictures/test_0085.png|INST_NEW|Up|1499454972|b11ad0b496876415602fe8955f50be36|2817452|00001073oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:16:17 (last step: 3028 msec, total: 5273 msec)
+#=#=#=# Syncrun started 2017-07-07T19:17:07
+#=#=#=#=# Propagation starts 2017-07-07T19:17:09 (last step: 1128 msec, total: 1128 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:17:09 (last step: 40 msec, total: 1169 msec)
+#=#=#=# Syncrun started 2017-07-07T19:18:31
+#=#=#=#=# Propagation starts 2017-07-07T19:18:32 (last step: 1071 msec, total: 1071 msec)
+||name_of_the_pic|INST_SYNC|Up|1499455111|704917b255f81b3c2fff6da0a1c42d02|9|00000290oc3bhx8sazb5|3|Local file changed during sync.|0|9|1499454960|704917b255f81b3c2fff6da0a1c42d02|00000290oc3bhx8sazb5|INST_NONE|
+||pictures/project_log_file|INST_SYNC|Up|1499455111|dc3c1833e4c5fa91544a50cbdf4fea06|1303|00000323oc3bhx8sazb5|3|Local file changed during sync.|0|1280|1499454960|dc3c1833e4c5fa91544a50cbdf4fea06|00000323oc3bhx8sazb5|INST_NONE|
+||pictures/test_0086.png|INST_NEW|Up|1499455111||2062281||3|Local file changed during sync.|0|0|0|||INST_NONE|
+19:18:32||data_for_processing|INST_SYNC|Up|1499455109|749fd0e706e5fdd4eabf7901587fe01a|4|00000287oc3bhx8sazb5|4||204|4|1499454958|1c42454eead837035ede15e6f8b64edb|00000287oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:18:33 (last step: 1188 msec, total: 2261 msec)
+#=#=#=# Syncrun started 2017-07-07T19:18:36
+#=#=#=#=# Propagation starts 2017-07-07T19:18:36 (last step: 556 msec, total: 556 msec)
+19:18:36||name_of_the_pic|INST_SYNC|Up|1499455111|8f687792f51e0258c8063ea5e8949c84|9|00000290oc3bhx8sazb5|4||204|9|1499454960|704917b255f81b3c2fff6da0a1c42d02|00000290oc3bhx8sazb5|INST_NONE|
+19:18:37||pictures/project_log_file|INST_SYNC|Up|1499455111|b6657e88038a9143c23445a69071e86a|1303|00000323oc3bhx8sazb5|4||204|1280|1499454960|dc3c1833e4c5fa91544a50cbdf4fea06|00000323oc3bhx8sazb5|INST_NONE|
+19:18:37||pictures/test_0086.png|INST_NEW|Up|1499455111|51ba8439c91aeaaae57125a0082e57bf|2062281|00001091oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:18:39 (last step: 2412 msec, total: 2968 msec)
+#=#=#=# Syncrun started 2017-07-07T19:18:43
+#=#=#=#=# Propagation starts 2017-07-07T19:18:45 (last step: 1315 msec, total: 1315 msec)
+19:18:45||transformed_pictures/test_0086.png|INST_NEW|Up|1499455123|25f96c4bbd25019ee58016240ff40154|1960994|00001094oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:18:47 (last step: 2374 msec, total: 3690 msec)
+#=#=#=# Syncrun started 2017-07-07T19:19:43
+#=#=#=#=# Propagation starts 2017-07-07T19:19:44 (last step: 1094 msec, total: 1094 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:19:44 (last step: 45 msec, total: 1140 msec)
+#=#=#=# Syncrun started 2017-07-07T19:20:54
+#=#=#=#=# Propagation starts 2017-07-07T19:20:55 (last step: 585 msec, total: 585 msec)
+19:20:55||transformed_pictures/test_0086.png|INST_SYNC|Up|1499455252|944cb8a143533697fd4fa81102668722|1960984|00001094oc3bhx8sazb5|4||204|1960994|1499455123|25f96c4bbd25019ee58016240ff40154|00001094oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:20:59 (last step: 4113 msec, total: 4699 msec)
+#=#=#=# Syncrun started 2017-07-07T19:21:15
+#=#=#=#=# Propagation starts 2017-07-07T19:21:17 (last step: 1604 msec, total: 1604 msec)
+19:21:17||transformed_pictures/test_0086.png -> transformed_pictures/test_0086_1.png|INST_RENAME|Up|1499455252|944cb8a143533697fd4fa81102668722|1960984|00001094oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:21:18 (last step: 904 msec, total: 2507 msec)
+#=#=#=# Syncrun started 2017-07-07T19:21:29
+#=#=#=#=# Propagation starts 2017-07-07T19:21:31 (last step: 1752 msec, total: 1752 msec)
+19:21:31||transformed_pictures/test_0086.png|INST_NEW|Up|1499455289|cdf4ab9da754af416ef468678edd259c|1960984|00001106oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:21:34 (last step: 2776 msec, total: 4527 msec)
+#=#=#=# Syncrun started 2017-07-07T19:22:08
+#=#=#=#=# Propagation starts 2017-07-07T19:22:09 (last step: 1014 msec, total: 1014 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:22:09 (last step: 40 msec, total: 1055 msec)
+#=#=#=# Syncrun started 2017-07-07T19:22:23
+#=#=#=#=# Propagation starts 2017-07-07T19:22:23 (last step: 566 msec, total: 566 msec)
+19:22:23||transformed_pictures/test_0086.png -> transformed_pictures/test_0086_2.png|INST_RENAME|Up|1499455289|cdf4ab9da754af416ef468678edd259c|1960984|00001106oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:22:24 (last step: 748 msec, total: 1313 msec)
+#=#=#=# Syncrun started 2017-07-07T19:22:28
+#=#=#=#=# Propagation starts 2017-07-07T19:22:30 (last step: 1181 msec, total: 1181 msec)
+19:22:30||transformed_pictures/test_0086.png|INST_NEW|Up|1499455348|c08a1b86bcb1b951ac5cfe927e8362ee|2331230|00001112oc3bhx8sazb5|4||201|0|0|||INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:22:32 (last step: 2795 msec, total: 3976 msec)
+#=#=#=# Syncrun started 2017-07-07T19:23:08
+#=#=#=#=# Propagation starts 2017-07-07T19:23:09 (last step: 992 msec, total: 992 msec)
+19:23:09||transformed_pictures/test_0086.png|INST_SYNC|Up|1499455387|af318948ff1ec43bb98e786c39e4d994|1960984|00001112oc3bhx8sazb5|4||204|2331230|1499455348|c08a1b86bcb1b951ac5cfe927e8362ee|00001112oc3bhx8sazb5|INST_NONE|
+#=#=#=# Syncrun finished 2017-07-07T19:23:11 (last step: 2599 msec, total: 3590 msec)
+#=#=#=# Syncrun started 2017-07-07T19:23:14
+#=#=#=#=# Propagation starts 2017-07-07T19:23:15 (last step: 1130 msec, total: 1130 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:23:15 (last step: 35 msec, total: 1166 msec)
+#=#=#=# Syncrun started 2017-07-07T19:24:08
+#=#=#=#=# Propagation starts 2017-07-07T19:24:08 (last step: 639 msec, total: 639 msec)
+#=#=#=# Syncrun finished 2017-07-07T19:24:08 (last step: 47 msec, total: 686 msec)

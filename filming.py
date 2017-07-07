@@ -23,7 +23,6 @@ def film(close):
     preview.window= (10,20,W,H)
         
     while True:
-        if (not close):
-            print('PULSE: ' + str(get_data.get_pulse_data_from_websocket()))
+        print('PULSE: ' + str(get_data.get_pulse_data_from_websocket()))
             
 

@@ -28,7 +28,7 @@ def displayPicture(value):
     font = pygame.font.Font('Monotxt.ttf', 55)
     screen.blit(font.render('PULSE:' + str(value), True, (255,255,255)), (20,850))
     pygame.display.update() 
-    time.sleep(5)  
+    time.sleep(10)
     
 #getNameOfTheTransformedPic()
 #displayPicture(2)
