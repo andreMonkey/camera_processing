@@ -23,10 +23,11 @@ def button_event_handler(argument):
     camera = filming.film(True)
     GPIO.cleanup()
     setup_gpio()
-    camera_test.main(camera)
+    sensorValue = camera_test.main(camera)
     print("\n \n Transforming picture now. \n \n")
     progress_bar.main()
     call(["bash", "./processing/pixelsorting"])
+    display_picture.display(sensorValue)
     main()
 
 def main():

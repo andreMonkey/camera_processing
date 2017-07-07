@@ -65,3 +65,5 @@ def main(camera):
     takePicture(camera, nameOfThePic)
     logNameOfThePicture(nameOfThePic)
     logAllData(nameOfThePic, sensorValue)
+    
+    return sensorValue
