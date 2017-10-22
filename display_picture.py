@@ -9,14 +9,15 @@ black = (0,0,0)
 
 #c = pygame.time.Clock() # create a clock object for timing
 
-def getNameOfTheTransformedPic(): 
+def getNameOfTheTransformedPic():
+    list_of_files = 0 
     list_of_files = glob.glob('/home/pi/camera_processing/processing/transformed_pictures/*')
     latest_file = max(list_of_files, key = os.path.getctime)
     print(latest_file)
     return latest_file
 
 def displayPicture(value):
-    os.environ['SDL_VIDEO_WINDOW_POS'] = "0,0"
+    os.environ['SDL_VIDEO_WINDOW_POS'] = "60,20"
     w, h = 1120, 1000
     size=(w,h)
     screen = pygame.display.set_mode(size) 
@@ -28,7 +29,8 @@ def displayPicture(value):
     font = pygame.font.Font('Monotxt.ttf', 55)
     screen.blit(font.render('PULSE:' + str(value), True, (255,255,255)), (20,850))
     pygame.display.update() 
-    time.sleep(10)
+    time.sleep(25)
+    pygame.display.quit()
     
 #getNameOfTheTransformedPic()
 #displayPicture(2)

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+## execute command for websocket subscription
+#sh ./unsubscribe.sh ble987BF3738084 PULSE
+
 # discover bluetooth devices
 sh ./discover.sh
 

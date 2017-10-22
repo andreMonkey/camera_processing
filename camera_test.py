@@ -29,7 +29,7 @@ def getNameOfThePic():
 	# TODO use time stamp as name of the pic!  string=time.strftime('%H:%M:%S', time.gmtime())
 	saveIdx = 1
 	while True:
-		nameOfThePic =  'test_' + '%04d' % saveIdx # trying to save in png so that pixelsorting goes automatically
+		nameOfThePic = '%04d' % saveIdx # trying to save in png so that pixelsorting goes automatically
 		#print ("looking for filename:" ,nameOfThePic)
 		if not os.path.isfile(picturePath + nameOfThePic + pictureFileType): break
 		saveIdx += 1

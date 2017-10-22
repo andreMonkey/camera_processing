@@ -28,9 +28,10 @@ def button_event_handler(argument):
     sensorValue = camera_test.main(camera)
     print("\n \n Transforming picture now. \n \n")
     progress_bar.main()
-    call(["bash", "./processing/pixelsorting"])
-    time.sleep(2)
-    display_picture.displayPicture(sensorValue)
+    #call(["bash", "./processing/pixelsorting"])
+    call(["bash", "sudo xvfb-run sh ./processing/pixelsorting"])
+    #time.sleep(3)
+    #display_picture.displayPicture(sensorValue)
     main()
 
 def main():
